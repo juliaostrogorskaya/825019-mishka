@@ -7,86 +7,110 @@
 
   <body>
     <header class="page-header">
-      <img class="page-header__logo-image" src="#" alt="Мишка - интернет-магазин милых вещиц для дома">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__top">
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+            <a class="page-header__logo" href="#"><img src="#" alt="Мишка - интернет-магазин милых вещиц для дома"></a>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a href="">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item">
+                <a href="">Поиск по сайту</a>
+              </li>
+              <li class="site-list__item">
+                <a href="">Корзина: пока пуста</a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+      <div class="page-header__intro">
+        <h1 class="page-header__title">Вязание на заказ</h1>
+      </div>
     </header>
 
     <main class="page-main">
-      <section class="page-intro">
-        <h2 class="page-intro__title">Вязание на заказ</h2>
-      </section>
-      <div class="form-promo">
-        <p class="form-promo__text"></p>
-      </div>
-      <section class="knitting-order">
-        <h2 class="knitting-order__title visually-hidden">Сделать заказ</h2>
-        <form class="knitting-order-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="knitting-order-form__wrapper">
-            <legend class="knitting-order-form__points">Тип</legend>
-            <input class="knitting-order-form__radio" id="accessory" type="radio" name="type" value="accessory">
-            <label for="accessory">Аксессуар для интерьера</label>
-            <input class="knitting-order-form__radio" id="toy" type="radio" name="type" value="toy">
-            <label for="toy">Детская игрушка</label>
+      <section class="order">
+        <h2 class="orer__title visually-hidden">Сделать заказ</h2>
+        <p class="order__text"></p>
+        <form class="order__form order-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="order-form__group">
+            <div class="order-form__wrapper">
+              <legend class="order-form__title">Тип</legend>
+              <div class="order-form__options">
+                <input class="order-form__radio" id="accessory" type="radio" name="type" value="accessory" checked>
+                <label class="radio-group__label" for="accessory">Аксессуар для интерьера</label>
+                <input class="order-form__radio" id="toy" type="radio" name="type" value="toy">
+                <label class="radio-group__label" for="toy">Детская игрушка</label>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="knitting-order-form__wrapper">
-            <legend class="knitting-order-form__points">Цвет</legend>
-            <input class="knitting-order-form__checkbox" id="white" type="checkbox" name="color" value="white">
-            <label for="white">Белый</label>
-            <input class="knitting-order-form__checkbox" id="gray" type="checkbox" name="color" value="gray">
-            <label for="gray">Серый</label>
-            <input class="knitting-order-form__checkbox" id="tiffany" type="checkbox" name="color" value="tiffany">
-            <label for="tiffany">«Тиффани»</label>
-            <input class="knitting-order-form__checkbox" id="black" type="checkbox" name="color" value="black">
-            <label for="black">Черный</label>
-            <input class="knitting-order-form__checkbox" id="pink" type="checkbox" name="color" value="pink">
-            <label for="pink">Розовый</label>
-            <input class="knitting-order-form__checkbox" id="orange" type="checkbox" name="color" value="orange">
-            <label for="orange">Оранжевый</label>
+          <fieldset class="order-form__group">
+            <div class="order-form__wrapper">
+              <legend class="order-form__title">Цвет</legend>
+              <div class="order-form__options">
+                <input class="order-form__checkbox" id="white" type="checkbox" name="color" value="white" checked>
+                <label for="white">Белый</label>
+                <input class="order-form__checkbox" id="gray" type="checkbox" name="color" value="gray" checked>
+                <label for="gray">Серый</label>
+                <input class="order-form__checkbox" id="tiffany" type="checkbox" name="color" value="tiffany">
+                <label for="tiffany">«Тиффани»</label>
+                <input class="order-form__checkbox" id="black" type="checkbox" name="color" value="black">
+                <label for="black">Черный</label>
+                <input class="order-form__checkbox" id="pink" type="checkbox" name="color" value="pink">
+                <label for="pink">Розовый</label>
+                <input class="order-form__checkbox" id="orange" type="checkbox" name="color" value="orange">
+                <label for="orange">Оранжевый</label>
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="knitting-order-form__wrapper">
-            <legend class="knitting-order-form__points">ФИО</legend>
-            <label for="user-name">Имя:</label>
-            <input class="knitting-order-form__user-info" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя*">
-            <label for="user-surname">Фамилия:</label>
-            <input class="knitting-order-form__user-info" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию*">
-            <label for="user-father-name">Отчество:</label>
-            <input class="knitting-order-form__user-info" id="user-father-name" type="text" name="user-father-name" placeholder="Отчество, если желаете">
+          <fieldset class="order-form__group">
+            <div class="order-form__wrapper">
+              <legend class="order-form__title">ФИО</legend>
+              <div class="order-form__options field-group">
+                <label for="user-name">Имя:</label>
+                <input class="order-form__user-info" id="user-name" type="text" name="user-name" placeholder="Введите ваше имя*" pattern="^[А-Яа-яЁё]+$">
+                <label for="user-surname">Фамилия:</label>
+                <input class="order-form__user-info" id="user-surname" type="text" name="user-surname" placeholder="Укажите фамилию*" pattern="^[А-Яа-яЁё]+$">
+                <label for="user-father-name">Отчество:</label>
+                <input class="order-form__user-info" id="user-father-name" type="text" name="user-father-name" placeholder="Отчество, если желаете">
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="knitting-order-form__wrapper">
-            <legend class="knitting-order-form__points">тел</legend>
-            <label for="phone-number"></label>
-            <input class="knitting-order-form__user-info" id="phone-number" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <fieldset class="order-form__group">
+            <div class="order-form__wrapper">
+              <legend class="order-form__title">тел</legend>
+              <div class="order-form__options">
+                <label class="visually-hidden" for="phone-number">Номер телефона</label>
+                <input class="order-form__user-info" id="phone-number" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="\+7 \d{3} \d{3} \d{2} \d{2}">
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="knitting-order-form__wrapper">
-            <legend class="knitting-order-form__points">E-mail</legend>
-            <label for="email"></label>
-            <input class="knitting-order-form__user-info" id="email" type="email" name="email" placeholder="Ваш Email*">
+          <fieldset class="order-form__group">
+            <div class="order-form__wrapper">
+              <legend class="order-form__title">E-mail</legend>
+              <div class="order-form__options">
+                <label class="visually-hidden" for="email">Почтовый адрес</label>
+                <input class="order-form__user-info" id="email" type="email" name="email" placeholder="Ваш Email*">
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="knitting-order-form__wrapper">
-            <legend class="knitting-order-form__points">Доп</legend>
-            <label for="wishes"></label>
-            <textarea class="knitting-order-form__wishes" id="wishes" name="wishes" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <fieldset class="order-form__group">
+            <div class="order-form__wrapper">
+              <legend class="order-form__title">Доп</legend>
+              <div class="order-form__options">
+                <label class="visually-hidden" for="wishes">Пожелания к заказу</label>
+                <textarea class="order-form__wishes" id="wishes" name="wishes" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
+            </div>
           </fieldset>
-          <p class="knitting-order-form__text-required">*Поля обязательны для заполнения</p>
-          <button class="knitting-order-form__send-button button" type="submit" name="send-order">ОТПРАВИТЬ ЗАКАЗ</button>
+          <div class="order-form__footer">
+            <small class="order-form__text-required"><sup>*</sup>Поля обязательны для заполнения</small>
+            <button class="order-form__button button" type="submit" name="send-order">Отправить заказ</button>
+          </div>
         </form>
       </section>
     </main>
