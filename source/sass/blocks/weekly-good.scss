@@ -1,0 +1,74 @@
+.weekly-good__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.weekly-good__header {
+  padding-top: 32px;
+  padding-bottom: 28px;
+}
+
+.weekly-good__title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.weekly-good__label {
+  color: $sea-blue;
+  font-weight: bold;
+  font-size: $font-size;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.weekly-good__info {
+  color: $grey-brown;
+  font-size: 15px;
+  text-align: left;
+}
+
+.weekly-good__table {
+  padding-bottom: 28px;
+}
+
+.weekly-good__row {
+  border-bottom: 1px solid $grey-light;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.item-info__label {
+  padding-right: 31px;
+}
+
+.weekly-good__price {
+  font-size: $font-size;
+  font-weight: bold;
+  line-height: $line-height*0.8;
+  color: $grey-brown;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .weekly-good__wrapper {
+    padding-left: 51px;
+  }
+
+  .weekly-good__header {
+    display: flex;
+  }
+
+  .weekly-good__title {
+    font-size: 43px;
+    color: $black;
+  }
+
+  .weekly-good__label {
+    margin-right: 80px;
+    margin-left: auto;
+    width: 72px;
+    line-height: 17px;
+  }
+}

@@ -1,0 +1,57 @@
+.category__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: -27px;
+}
+
+.category__item {
+  padding-left: 29px;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  width: 100%;
+}
+
+.category__item:first-of-type {
+  background-color: $sea-blue;
+}
+
+.category__item:last-of-type {
+  background-color: $greeny-blue;
+}
+
+.category__link {
+  color: $white;
+  text-align: left;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.category__item--interior {
+  background-image: url("../../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.category__item--toys {
+  background-image: url("../../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .category__item {
+    width: 50%;
+    min-height: 119px;
+  }
+
+  .category__list {
+    padding-left: 52px;
+    padding-right: 52px;
+    display: flex;
+    margin-top: -119px;
+  }
+
+}

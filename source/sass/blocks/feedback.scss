@@ -1,0 +1,43 @@
+.feedback__wrapper {
+  padding-left: 30px;
+  margin-top: 60px;
+}
+
+.feedback__title {
+  color: $black;
+  font-weight: bold;
+  line-height: $line-height;
+  font-size: 25px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.feedback__item {
+  margin: 0;
+  padding-right: 38px;
+  margin-top: 38px;
+}
+
+.feedback__text {
+  color: $grey-brown;
+  line-height: $line-height;
+  font-size: 15px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.feedback__author-name {
+  text-align: left;
+  color: $black;
+  font-size: $font-size;
+  line-height: 24px;
+}
+
+.feedback__author-hashtag {
+  color: $grey-brown;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-style: normal;
+}
