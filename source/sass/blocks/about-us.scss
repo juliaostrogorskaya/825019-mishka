@@ -107,3 +107,27 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-us__wrapper {
+    padding-left: 48px;
+    padding-right: 90px;
+  }
+
+  .about-us__title {
+    @include font-set(43px,50px,bold);
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 430px;
+  }
+
+  .about-us__item {
+    width: 50%;
+
+    @include font-set(20px,22px,bold);
+  }
+}

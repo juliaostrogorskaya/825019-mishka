@@ -27,3 +27,11 @@
   background-position: center;
   border: $border $grey-light;
 }
+
+@media (min-width: $tablet-width) {
+  .slider__controls {
+    position: absolute;
+    right: 52px;
+    bottom: 10px;
+  }
+}

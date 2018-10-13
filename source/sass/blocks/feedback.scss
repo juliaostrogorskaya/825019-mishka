@@ -1,5 +1,5 @@
 .feedback__wrapper {
-  margin-top: 60px;
+  padding-top: 60px;
   padding-left: 30px;
 }
 
@@ -37,4 +37,41 @@
   @include font-set($font-size,$line-height);
   color: $secondary-color;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 48px;
+    padding-right: 52px;
+    padding-top: 86px;
+    padding-bottom: 53px;
+    margin-bottom: 69px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .feedback__title {
+    @include font-set(43px,50px,bold);
+  }
+
+  .feedback__list {
+    order: 2;
+  }
+
+  .feedback__text {
+    font-size: $font-size;
+  }
+
+  .feedback__author-name {
+    font-size: 18px;
+  }
+
+  .feedback__button {
+    order: 1;
+    margin-left: auto;
+    width: 175px;
+  }
 }

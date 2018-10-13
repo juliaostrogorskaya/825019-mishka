@@ -1,0 +1,25 @@
+.modal {
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: $border $grey-dark;
+  padding: 30px;
+}
+
+.modal__title {
+  margin: 0;
+
+  @include font-set(25px,$line-height,bold);
+  text-align: center;
+}
+
+.modal__text {
+  @include font-set(15px,$line-height);
+  color: $secondary-color;
+  text-align: center;
+}
+
+.chooze-size__button {
+  background-color: $primary-color;
+  color: $white;
+  border: none;
+  padding: 0;
+}
