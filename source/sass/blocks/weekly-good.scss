@@ -1,6 +1,6 @@
 .weekly-good__wrapper {
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
 }
 
 .weekly-good__header {
@@ -9,24 +9,24 @@
 }
 
 .weekly-good__title {
-  text-align: left;
-  font-size: 25px;
-  font-weight: bold;
   margin: 0;
+
+  @include font-set(25px,$line-height,bold);
+  text-align: left;
 }
 
 .weekly-good__label {
-  color: $sea-blue;
-  font-weight: bold;
-  font-size: $font-size;
-  text-transform: uppercase;
   padding: 0;
+
+  @include font-set($font-size,20px,bold);
+  color: $primary-color;
+  text-transform: uppercase;
 }
 
 .weekly-good__info {
-  color: $grey-brown;
-  font-size: 15px;
+  @include font-set(15px,24px);
   text-align: left;
+  color: $secondary-color;
 }
 
 .weekly-good__table {
@@ -34,9 +34,10 @@
 }
 
 .weekly-good__row {
-  border-bottom: 1px solid $grey-light;
   padding-top: 5px;
   padding-bottom: 5px;
+
+  border-bottom: $border $grey-light;
 }
 
 .item-info__label {
@@ -44,11 +45,9 @@
 }
 
 .weekly-good__price {
-  font-size: $font-size;
-  font-weight: bold;
-  line-height: $line-height*0.8;
-  color: $grey-brown;
+  @include font-set($font-size,24px,bold);
   text-align: center;
+  color: $secondary-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -61,14 +60,15 @@
   }
 
   .weekly-good__title {
-    font-size: 43px;
+    @include font-set(43px,50px,bold);
     color: $black;
   }
 
   .weekly-good__label {
+    width: 72px;
     margin-right: 80px;
     margin-left: auto;
-    width: 72px;
-    line-height: 17px;
+
+    @include font-set($font-size,17px,bold);
   }
 }

@@ -1,13 +1,11 @@
 .contacts__wrapper {
-  padding-left: 30px;
   margin-bottom: 42px;
+  padding-left: 30px;
 }
 
 .contacts__title {
-  font-size: 18px;
-  font-weight: bold;
+  @include font-set(18px,$line-height,bold);
   color: $black;
-  line-height: $line-height;
 }
 
 .contacts__item {
@@ -15,25 +13,24 @@
 }
 
 .contacts__text {
-  font-size: 15px;
-  color: $grey-brown;
-  line-height: $line-height;
   width: 28%;
+
+  @include font-set(15px,$line-height);
+  color: $secondary-color;
 }
 
 .contacts__link {
+  @include font-set(15px,$line-height);
+  color: $secondary-color;
   text-decoration: none;
-  font-size: 15px;
-  color: $grey-brown;
-  line-height: $line-height;
 }
 
 .contacts__address {
-  font-size: 15px;
-  color: $grey-brown;
-  line-height: $line-height;
-  margin: 0;
   width: 47%;
+  margin: 0;
+
+  @include font-set(15px,$line-height);
+  color: $secondary-color;
 }
 
 .contacts__button {

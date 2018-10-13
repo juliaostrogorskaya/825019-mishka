@@ -1,15 +1,16 @@
 .button {
-  font-size: $font-size;
-  font-weight: bold;
-  color: $grey-brown;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid $grey-brown;
+  display: inline-block;
+  box-sizing: border-box;
   width: 259px;
   height: 52px;
-  display: inline-block;
-  text-align: center;
+  padding-top: 15px;
+
+  @include font-set($font-size,20px,bold);
   vertical-align: middle;
-  box-sizing: border-box;
-  padding-top: 10px;
+  text-align: center;
+  color: $secondary-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: $border $secondary-color;
 }
