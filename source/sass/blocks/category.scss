@@ -27,7 +27,7 @@
 .category__item--interior {
   background-image: url("../../img/icon-interior.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 90%;
 }
 
 .category__item--toys {
@@ -35,7 +35,7 @@
 
   background-image: url("../../img/icon-toy.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 90% 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -49,5 +49,10 @@
     margin-top: -119px;
     padding-right: 52px;
     padding-left: 52px;
+  }
+
+  .category__link {
+    @include font-set(20px,$line-height,bold);
+    padding-right: 120px;
   }
 }

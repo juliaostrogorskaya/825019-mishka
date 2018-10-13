@@ -47,6 +47,8 @@
   @include font-set($font-size,24px,bold);
   text-align: center;
   color: $secondary-color;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -71,6 +73,12 @@
     margin-bottom: 50px;
   }
 
+  .weekly-good__description {
+    width: 40%;
+
+    @include font-set($font-size,$line-height);
+  }
+
   .weekly-good__table {
     @include font-set(15px,20px);
   }
@@ -91,9 +99,8 @@
     height: 404px;
   }
 
-  .weekly-good__description {
-    width: 40%;
-
-    @include font-set($font-size,$line-height);
+  .weekly-good__price {
+    @include font-set(20px,24px,bold);
+    margin-bottom: 34px;
   }
 }

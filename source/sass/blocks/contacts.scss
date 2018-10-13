@@ -6,6 +6,7 @@
 .contacts__title {
   @include font-set(18px,$line-height,bold);
   color: $black;
+  margin: 0;
 }
 
 .contacts__item {
@@ -35,4 +36,47 @@
 
 .contacts__button {
   margin-left: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding-left: 48px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__title {
+    @include font-set(43px,50px,bold);
+    margin-bottom: 65px;
+    width: 100%;
+  }
+
+  .contacts__text {
+    font-size: $font-size;
+    margin-right: 26px;
+    width: auto;
+  }
+
+  .contacts__link {
+    font-size: $font-size;
+  }
+
+  .contacts__address {
+    font-size: $font-size;
+    width: 54%;
+  }
+
+  .contacts__item {
+    width: 50%;
+  }
+
+  .contacts__map-image {
+    width: 768px;
+    height: 457px;
+  }
+
+  .contacts__button {
+    margin-left: 271px;
+    width: 230px;
+  }
 }
