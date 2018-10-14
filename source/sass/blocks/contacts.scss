@@ -47,10 +47,14 @@
 
 .contacts__button {
   margin-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 19px;
+  }
+
   .contacts__wrapper {
     padding-left: 48px;
     display: flex;
