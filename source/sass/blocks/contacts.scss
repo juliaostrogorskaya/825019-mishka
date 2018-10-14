@@ -1,5 +1,6 @@
 .contacts__wrapper {
-  margin-bottom: 42px;
+  margin-bottom: 36px;
+  margin-top: 88px;
   padding-left: 30px;
 }
 
@@ -11,6 +12,8 @@
 
 .contacts__item {
   display: flex;
+  margin-top: 26px;
+  margin-bottom: 30px;
 }
 
 .contacts__text {
@@ -34,8 +37,17 @@
   color: $secondary-color;
 }
 
+.contacts__map {
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 457px;
+  margin-bottom: 39px;
+}
+
 .contacts__button {
   margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,36 +55,44 @@
     padding-left: 48px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: 28px;
   }
 
   .contacts__title {
     @include font-set(43px,50px,bold);
-    margin-bottom: 65px;
+    margin-bottom: 21px;
     width: 100%;
   }
 
   .contacts__text {
-    font-size: $font-size;
     margin-right: 26px;
     width: auto;
+
+    @include font-set($font-size,$line-height);
   }
 
   .contacts__link {
-    font-size: $font-size;
+    @include font-set($font-size,$line-height);
   }
 
   .contacts__address {
-    font-size: $font-size;
-    width: 54%;
+    width: 70%;
+
+    @include font-set($font-size,$line-height);
   }
 
   .contacts__item {
-    width: 50%;
+    width: 47%;
+    margin-top: 29px;
   }
 
-  .contacts__map-image {
+  .contacts__map {
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
     width: 768px;
     height: 457px;
+    margin-bottom: 55px;
   }
 
   .contacts__button {

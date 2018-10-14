@@ -1,6 +1,6 @@
 .slider__controls {
   display: flex;
-  margin-top: 36px;
+  margin-top: 28px;
   margin-bottom: 38px;
 }
 
@@ -31,7 +31,12 @@
 @media (min-width: $tablet-width) {
   .slider__controls {
     position: absolute;
-    right: 52px;
-    bottom: 10px;
+    right: 50px;
+    bottom: 9px;
+  }
+
+  .slider__button {
+    border: none;
+    width: 88px;
   }
 }
