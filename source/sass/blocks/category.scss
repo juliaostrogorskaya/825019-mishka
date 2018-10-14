@@ -1,12 +1,11 @@
 .category__list {
   @include reset-list;
-  margin-top: -27px;
 }
 
 .category__item {
   width: 100%;
-  padding-top: 29px;
-  padding-bottom: 29px;
+  padding-top: 27px;
+  padding-bottom: 24px;
   padding-left: 29px;
 
   &:first-of-type {
@@ -22,12 +21,14 @@
   @include font-set(19px,24px,bold);
   text-align: left;
   color: $white;
+  display: inline-block;
+  width: 120px;
 }
 
 .category__item--interior {
   background-image: url("../../img/icon-interior.svg");
   background-repeat: no-repeat;
-  background-position: 90%;
+  background-position: 87% 57%;
 }
 
 .category__item--toys {
@@ -42,6 +43,15 @@
   .category__item {
     width: 50%;
     min-height: 119px;
+    padding-left: 33px;
+
+    &--toys {
+      background-position: 88% 51%;
+    }
+
+    &--interior {
+      background-position: 87% 51%;
+    }
   }
 
   .category__list {
@@ -54,5 +64,6 @@
   .category__link {
     @include font-set(20px,$line-height,bold);
     padding-right: 120px;
+    width: auto;
   }
 }
