@@ -1,0 +1,142 @@
+.order {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 24px;
+}
+
+.order__form {
+  margin-left: -14px;
+}
+
+.order__text {
+  margin: 0;
+  margin-bottom: 22px;
+
+  @include font-set(13px,24px);
+  color: $secondary-color;
+}
+
+.order-form__group {
+  border: none;
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+    padding: 0;
+    padding-left: 14px;
+  }
+}
+
+.order-form__title {
+  margin: 0;
+  padding-bottom: 28px;
+
+  @include font-set($font-size,16px,bold);
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.radio-group__label {
+  @include font-set($font-size,18px,bold);
+}
+
+.checkbox-group__label {
+  @include font-set($font-size,18px,bold);
+}
+
+.field-group__label {
+  @include font-set($font-size,18px,bold);
+}
+
+.field-group__input {
+  border: none;
+  border-bottom: 2px solid $black;
+}
+
+.field-group__textarea {
+  border: 2px solid $black;
+  min-width: 260px;
+  min-height: 142px;
+  padding-left: 12px;
+}
+
+.radio-group__wrapper {
+  position: relative;
+  padding-left: 63px;
+}
+
+.radio-group__input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  width: 40px;
+  height: 39px;
+
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.radio-group__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 11px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 8px solid #62d1ba;
+  border-radius: 50%;
+}
+
+.checkbox-group__wrapper {
+  position: relative;
+  padding-left: 63px;
+  padding-bottom: 32px;
+}
+
+.checkbox-group__input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -6px;
+
+  width: 40px;
+  height: 39px;
+
+  border: 2px solid black;
+}
+
+.checkbox-group__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  width: 40px;
+  height: 39px;
+
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.field-group__wrapper {
+  padding-bottom: 22px;
+}
+
+.order-form__required {
+  @include font-set(14px,16px);
+  color: $secondary-color;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.order-form__footer {
+  padding-left: 10px;
+  margin-bottom: 55px;
+}
+
+.order-form__button {
+  padding-top: 0;
+  background-color: $white;
+}
