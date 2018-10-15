@@ -86,7 +86,8 @@
   background-size: cover;
 }
 
-.page-header__title {
+.page-header__title,
+.page-header__title--inner {
   width: 80%;
   margin: 0 auto;
   padding-top: 73px;
@@ -119,9 +120,18 @@
     text-align: right;
   }
 
-  .page-header__title {
+  .page-header__title--inner {
     width: 60%;
     padding-top: 110px;
+
+    color: $black;
+
+    @include font-set(43px,50px,bold);
+  }
+
+  .page-header__title {
+    width: 60%;
+    padding-top: 55px;
 
     color: $black;
 
@@ -302,7 +312,8 @@
     border-top: $border $grey-light;
   }
 
-  .page-header__title {
+  .page-header__title,
+  .page-header__title--inner {
     width: 60%;
 
     @include font-set(53px,57px);

@@ -1,7 +1,7 @@
 .order {
-  padding-left: 30px;
-  padding-right: 30px;
   padding-top: 24px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .order__form {
@@ -9,16 +9,20 @@
 }
 
 .order__text {
+  width: 90%;
   margin: 0;
   margin-bottom: 22px;
 
-  @include font-set(13px,24px);
   color: $secondary-color;
+
+  @include font-set(13px,24px);
 }
 
 .order-form__group {
-  border: none;
   margin-bottom: 20px;
+  padding: 0;
+
+  border: none;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -31,9 +35,10 @@
   margin: 0;
   padding-bottom: 28px;
 
-  @include font-set($font-size,16px,bold);
   color: $primary-color;
   text-transform: uppercase;
+
+  @include font-set($font-size,16px,bold);
 }
 
 .radio-group__label {
@@ -54,14 +59,16 @@
 }
 
 .field-group__textarea {
-  border: 2px solid $black;
   min-width: 260px;
   min-height: 142px;
   padding-left: 12px;
+
+  border: 2px solid $black;
 }
 
 .radio-group__wrapper {
   position: relative;
+
   padding-left: 63px;
 }
 
@@ -80,8 +87,8 @@
 .radio-group__input:checked + label::after {
   content: "";
   position: absolute;
-  left: 12px;
   top: 11px;
+  left: 12px;
 
   width: 16px;
   height: 16px;
@@ -92,15 +99,16 @@
 
 .checkbox-group__wrapper {
   position: relative;
-  padding-left: 63px;
+
   padding-bottom: 32px;
+  padding-left: 63px;
 }
 
 .checkbox-group__input + label::before {
   content: "";
   position: absolute;
-  left: 0;
   top: -6px;
+  left: 0;
 
   width: 40px;
   height: 39px;
@@ -111,7 +119,7 @@
 .checkbox-group__input:checked + label::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 4px;
 
   width: 40px;
   height: 39px;
@@ -125,18 +133,152 @@
 }
 
 .order-form__required {
-  @include font-set(14px,16px);
-  color: $secondary-color;
-  margin-bottom: 30px;
   display: block;
+  margin-bottom: 30px;
+
+  color: $secondary-color;
+
+  @include font-set(14px,16px);
 }
 
 .order-form__footer {
-  padding-left: 10px;
   margin-bottom: 55px;
+  padding-left: 10px;
 }
 
 .order-form__button {
   padding-top: 0;
+
   background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    padding: 0;
+  }
+
+  .order__text {
+    width: 89%;
+    margin-bottom: 69px;
+    padding-top: 80px;
+    padding-left: 50px;
+
+    @include font-set($font-size,$line-height);
+  }
+
+  .order__form {
+    margin: 0;
+  }
+
+  .order-form__title {
+    padding-top: 6px;
+  }
+
+  .order-form__group {
+    margin-bottom: 14px;
+
+    &:nth-of-type(2) {
+      margin-bottom: 62px;
+      padding-top: 62px;
+      padding-bottom: 13px;
+
+      background-color: $grey-light;
+    }
+  }
+
+  .order-form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 49px;
+  }
+
+  .radio-group__wrapper {
+    padding-bottom: 46px;
+    padding-left: 210px;
+  }
+
+  .radio-group__label {
+    @include font-set(19px,18px);
+  }
+
+  .radio-group__input + label::before {
+    top: -13px;
+    left: 131px;
+
+    width: 52px;
+    height: 53px;
+  }
+
+  .radio-group__input:checked + label::after {
+    top: 3px;
+    left: 146px;
+
+    width: 22px;
+    height: 22px;
+
+    border: 11px solid #62d1ba;
+  }
+
+  .checkbox-group__label {
+    @include font-set(19px,18px);
+  }
+
+  .checkbox-group__input + label::before {
+    top: -13px;
+    left: 121px;
+
+    width: 54px;
+    height: 52px;
+  }
+
+  .checkbox-group__input:checked + label::after {
+    top: 3px;
+    left: 131px;
+
+    width: 33px;
+    height: 22px;
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -48px;
+    padding-left: 45px;
+  }
+
+  .checkbox-group__wrapper {
+    width: 50%;
+    padding-bottom: 46px;
+    padding-left: 200px;
+  }
+
+
+  .field-group {
+    margin-bottom: 62px;
+  }
+
+  .field-group__wrapper {
+    padding-bottom: 36px;
+    padding-left: 128px;
+  }
+
+  .field-group__label {
+    padding-right: 38px;
+
+    @include font-set(19px,18px);
+  }
+
+  .field-group__input {
+    width: 375px;
+    padding-bottom: 13px;
+  }
+
+  .order-form__footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .order-form__required {
+    order: 2;
+  }
 }
