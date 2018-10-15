@@ -77,3 +77,9 @@
     margin-right: 3px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    margin-left: 50px;
+  }
+}

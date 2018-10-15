@@ -40,3 +40,9 @@
     width: 88px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__controls {
+    bottom: 60px;
+  }
+}

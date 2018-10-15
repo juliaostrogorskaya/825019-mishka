@@ -1,6 +1,6 @@
 .about-us__wrapper {
-  padding-left: 30px;
   margin-bottom: 56px;
+  padding-left: 30px;
 }
 
 .about-us__title {
@@ -116,10 +116,10 @@
 
 @media (min-width: $tablet-width) {
   .about-us__wrapper {
-    padding-left: 48px;
-    padding-right: 90px;
     margin-top: 67px;
     margin-bottom: 20px;
+    padding-right: 90px;
+    padding-left: 48px;
   }
 
   .about-us__title {
@@ -128,8 +128,8 @@
 
   .about-us__list {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
     height: 470px;
     margin-top: 50px;
   }
@@ -140,5 +140,25 @@
     padding-bottom: 29px;
 
     @include font-set(20px,22px,bold);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__wrapper {
+    margin-top: 83px;
+    padding-left: 273px;
+  }
+
+  .about-us__title {
+    @include font-set(53px,57px);
+  }
+
+  .about-us__item {
+    width: 50%;
+  }
+
+  .about-us__list {
+    height: 475px;
+    padding-right: 130px;
   }
 }

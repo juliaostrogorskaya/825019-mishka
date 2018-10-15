@@ -78,10 +78,12 @@
 
 .page-header__intro--image {
   height: 283px;
+  width: 100%;
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 20%;
+  background-size: cover;
 }
 
 .page-header__title {
@@ -105,12 +107,7 @@
   }
 
   .page-header__intro--image {
-    width: 772px;
     height: 746px;
-
-    background-image: url("../img/hero-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   .page-header__intro-text {
@@ -302,13 +299,6 @@
     margin-top: -56px;
 
     border-top: $border $grey-light;
-  }
-
-  .page-header__intro--image {
-    width: 1250px;
-    height: 746px;
-
-    background-size: cover;
   }
 
   .page-header__title {

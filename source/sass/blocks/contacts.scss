@@ -1,13 +1,15 @@
 .contacts__wrapper {
-  margin-bottom: 36px;
   margin-top: 88px;
+  margin-bottom: 36px;
   padding-left: 30px;
 }
 
 .contacts__title {
-  @include font-set(18px,$line-height,bold);
-  color: $black;
   margin: 0;
+
+  color: $black;
+
+  @include font-set(18px,$line-height,bold);
 }
 
 .contacts__item {
@@ -19,35 +21,39 @@
 .contacts__text {
   width: 28%;
 
-  @include font-set(15px,$line-height);
   color: $secondary-color;
+
+  @include font-set(15px,$line-height);
 }
 
 .contacts__link {
-  @include font-set(15px,$line-height);
   color: $secondary-color;
   text-decoration: none;
+
+  @include font-set(15px,$line-height);
 }
 
 .contacts__address {
   width: 47%;
   margin: 0;
 
-  @include font-set(15px,$line-height);
   color: $secondary-color;
+
+  @include font-set(15px,$line-height);
 }
 
 .contacts__map {
-  background-image: url("../img/map-mobile@1x.jpg");
-  background-repeat: no-repeat;
   width: 320px;
   height: 457px;
   margin-bottom: 39px;
+
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
 }
 
 .contacts__button {
-  margin-left: 30px;
   margin-bottom: 39px;
+  margin-left: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,22 +62,23 @@
   }
 
   .contacts__wrapper {
-    padding-left: 48px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 150px;
     margin-bottom: 28px;
+    padding-left: 48px;
   }
 
   .contacts__title {
-    @include font-set(43px,50px,bold);
-    margin-bottom: 21px;
     width: 100%;
+    margin-bottom: 21px;
+
+    @include font-set(43px,50px,bold);
   }
 
   .contacts__text {
-    margin-right: 26px;
     width: auto;
+    margin-right: 26px;
 
     @include font-set($font-size,$line-height);
   }
@@ -92,15 +99,51 @@
   }
 
   .contacts__map {
-    background-image: url("../img/map-tablet@1x.jpg");
-    background-repeat: no-repeat;
     width: 768px;
     height: 457px;
     margin-bottom: 55px;
+
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .contacts__button {
-    margin-left: 271px;
     width: 230px;
+    margin-left: 271px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+
+    margin-bottom: 68px;
+  }
+
+  .contacts__wrapper {
+    display: block;
+    width: 75%;
+    margin-top: 233px;
+    margin-bottom: 50px;
+    padding-left: 273px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: -72px;
+    right: 50px;
+
+    width: 525px;
+    height: 457px;
+  }
+
+  .contacts__button {
+    margin-left: 276px;
+  }
+
+  .contacts__title {
+    margin-bottom: 50px;
+
+    @include font-set(53px,57px);
   }
 }

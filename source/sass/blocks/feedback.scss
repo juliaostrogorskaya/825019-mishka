@@ -100,3 +100,28 @@
     width: 175px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    margin-left: 100px;
+  }
+
+  .feedback__wrapper {
+    padding-left: 172px;
+    padding-top: 73px;
+    padding-bottom: 94px;
+  }
+
+  .feedback__title {
+    @include font-set(53px,57px);
+  }
+
+  .feedback__text {
+    margin-bottom: 37px;
+    padding-right: 100px;
+  }
+
+  .feedback__button {
+    margin-top: 6px;
+  }
+}
