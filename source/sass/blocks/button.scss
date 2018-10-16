@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 259px;
+  height: 52px;
+  padding-top: 15px;
+
+  @include font-set($font-size,20px,bold);
+  vertical-align: middle;
+  text-align: center;
+  color: $secondary-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: $border $secondary-color;
+}

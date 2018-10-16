@@ -1,0 +1,76 @@
+.category__list {
+  @include reset-list;
+}
+
+.category__item {
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 24px;
+  padding-left: 29px;
+
+  &:first-of-type {
+    background-color: $primary-color;
+  }
+
+  &:last-of-type {
+    background-color: $primary-color-dark;
+  }
+}
+
+.category__link {
+  @include font-set(19px,24px,bold);
+  text-align: left;
+  color: $white;
+  display: inline-block;
+  width: 120px;
+}
+
+.category__item--interior {
+  background-image: url("../../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: 87% 57%;
+}
+
+.category__item--toys {
+  padding-right: 27px;
+
+  background-image: url("../../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .category__item {
+    width: 50%;
+    min-height: 119px;
+    padding-left: 33px;
+
+    &--toys {
+      background-position: 88% 51%;
+    }
+
+    &--interior {
+      background-position: 87% 51%;
+    }
+  }
+
+  .category__list {
+    display: flex;
+    margin-top: -119px;
+    margin-right: 52px;
+    margin-left: 52px;
+  }
+
+  .category__link {
+    @include font-set(20px,$line-height,bold);
+    padding-right: 120px;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category__list {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
