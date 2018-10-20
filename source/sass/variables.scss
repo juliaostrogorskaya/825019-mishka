@@ -7,7 +7,9 @@ $white: #ffffff;
 $black: #000000;
 $grey-light: #ececec;
 $grey-dark: #c6c6c6;
-$border: 1px solid;
+$border: 1px solid $grey-light;
+$border-button: 2px solid $secondary-color;
+$border-footer: 1px solid $grey-dark;
 
 $font-family: "Open Sans", arial, sans-serif;
 $font-size: 17px;
@@ -15,3 +17,4 @@ $line-height: 30px;
 
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$mobile-width-only: 767px;

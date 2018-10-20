@@ -9,7 +9,7 @@
 }
 
 .page-footer__social {
-  border-bottom: $border $grey-dark;
+  border-bottom: $border-footer;
 }
 
 .social__list {
@@ -32,7 +32,6 @@
 .page-footer__copyright {
   display: flex;
   align-items: center;
-  margin: 0;
   justify-content: center;
   padding-top: 6px;
   padding-bottom: 12px;

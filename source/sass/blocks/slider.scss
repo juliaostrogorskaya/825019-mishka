@@ -13,7 +13,7 @@
   background-image: url("../../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: $border $grey-light;
+  border: $border;
 }
 
 .slider__button--next {
@@ -25,7 +25,7 @@
   background-image: url("../../img/icon-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: $border $grey-light;
+  border: $border;
 }
 
 @media (min-width: $tablet-width) {

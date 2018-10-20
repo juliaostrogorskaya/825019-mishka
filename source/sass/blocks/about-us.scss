@@ -1,11 +1,10 @@
-.about-us__wrapper {
-  margin-bottom: 56px;
-  padding-left: 30px;
+.about-us {
+  padding-top: 34px;
+  padding-bottom: 27px;
 }
 
 .about-us__title {
   margin: 0;
-  margin-top: 34px;
   margin-bottom: 31px;
 
   @include font-set(25px,$line-height,bold);
@@ -20,7 +19,6 @@
 
   margin-bottom: 30px;
   padding-top: 55px;
-  padding-right: 38px;
 
   @include font-set(17px,20px,bold);
 

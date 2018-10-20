@@ -1,16 +1,15 @@
 .weekly-good__wrapper {
   position: relative;
-
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 .weekly-good {
+  position: relative;
+
   &::after {
     content: "";
     position: absolute;
 
-    width: 319px;
+    width: 100%;
     height: 6px;
 
     background-image: url("../img/bg-zigzag-line.svg");
@@ -27,8 +26,6 @@
 .weekly-good__title {
   margin: 0;
 
-  text-align: left;
-
   @include font-set(25px,$line-height,bold);
 }
 
@@ -42,7 +39,6 @@
 }
 
 .weekly-good__info {
-  text-align: left;
   color: $secondary-color;
 
   @include font-set(15px,24px);
@@ -55,7 +51,6 @@
 }
 
 .weekly-good__table {
-  width: 260px;
   margin-bottom: 27px;
 }
 
@@ -65,8 +60,12 @@
   border-bottom: $border $grey-light;
 }
 
+.item-info__label {
+  width: 100px;
+}
+
 .item-info__value {
-  padding-left: 19px;
+  width: 160px;
 }
 
 .weekly-good__image {
