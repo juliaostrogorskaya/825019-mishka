@@ -115,20 +115,22 @@
   .contacts {
     position: relative;
 
-    margin-bottom: 68px;
+    padding-bottom: 65px;
   }
 
   .contacts__wrapper {
     display: block;
-    width: 75%;
-    margin-top: 233px;
-    margin-bottom: 50px;
-    padding-left: 273px;
+    padding-bottom: 51px;
+    padding-top: 120px;
+  }
+
+  .contacts__item {
+    padding-left: 174px;
   }
 
   .contacts__map {
     position: absolute;
-    top: -72px;
+    top: 68px;
     right: 50px;
 
     width: 525px;
@@ -141,6 +143,7 @@
 
   .contacts__title {
     margin-bottom: 50px;
+    padding-left: 172px;
 
     @include font-set(53px,57px);
   }

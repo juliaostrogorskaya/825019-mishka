@@ -110,13 +110,16 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    margin-left: 100px;
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 30px;
   }
 
   .feedback__wrapper {
     padding-left: 172px;
     padding-top: 73px;
     padding-bottom: 94px;
+    padding-right: 0;
   }
 
   .feedback__title {
@@ -124,8 +127,8 @@
   }
 
   .feedback__text {
-    margin-bottom: 37px;
-    padding-right: 100px;
+    margin-bottom: 39px;
+    padding-right: 120px;
   }
 
   .feedback__button {

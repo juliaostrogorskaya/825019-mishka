@@ -150,10 +150,20 @@
 
 @media (min-width: $desktop-width) {
   .about-us__wrapper {
-    margin-top: 83px;
+    padding-top: 52px;
   }
 
   .about-us__title {
     @include font-set(53px,57px);
+    padding-left: 175px;
+  }
+
+  .about-us__list {
+    padding-left: 175px;
+    padding-right: 122px;
+  }
+
+  .about-us__item {
+    padding-right: 80px;
   }
 }

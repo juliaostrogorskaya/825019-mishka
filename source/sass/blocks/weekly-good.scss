@@ -170,13 +170,15 @@
 
 @media (min-width: $desktop-width) {
   .weekly-good__wrapper {
-    padding: 0 100px;
     padding-top: 78px;
     padding-bottom: 72px;
+    width: auto;
   }
 
   .weekly-good__header {
     flex-direction: row-reverse;
+    padding-left: 45px;
+    width: 69%;
   }
 
   .weekly-good__title {
@@ -185,19 +187,23 @@
     @include font-set(53px,57px);
   }
 
+  .weekly-good__info {
+    padding-left: 175px;
+    width: auto;
+  }
+
   .weekly-good__description {
     margin-bottom: 50px;
-    width: 95%;
+    width: 33%;
   }
 
   .weekly-good__footer {
-    margin-top: 54px;
+    margin-top: 111px;
+    padding-left: 175px;
   }
 
   .weekly-good__image {
-    top: -8px;
-    right: 50px;
-
-    width: 50%;
+    top: 71px;
+    right: -25px;
   }
 }
