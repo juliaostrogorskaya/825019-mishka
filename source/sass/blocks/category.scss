@@ -56,21 +56,23 @@
 
   .category__list {
     display: flex;
+    margin: 0 auto;
     margin-top: -119px;
-    margin-right: 52px;
-    margin-left: 52px;
+    padding: 0 52px;
   }
 
   .category__link {
     @include font-set(20px,$line-height,bold);
-    padding-right: 120px;
-    width: auto;
+  }
+
+  .category__text {
+    width: 50%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .category__list {
-    margin-right: 100px;
-    margin-left: 100px;
+    padding: 0 100px;
+    margin: 0 auto;
   }
 }

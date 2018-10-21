@@ -1,5 +1,16 @@
 .wrapper {
-  width: 100%;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    padding: 0 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    padding: 0 100px;
+  }
 }

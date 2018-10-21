@@ -1,17 +1,21 @@
+.catalog {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
 .catalog__list {
   @include reset-list;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
+  width: 100%;
 }
 
 .catalog-item {
-  border: $border $grey-light;
+  border: $border;
+  margin-bottom: 30px;
 }
 
 .catalog-item__description {
   padding-left: 28px;
+  padding-right: 28px;
 }
 
 .catalog-item__title {
@@ -29,6 +33,13 @@
   @include font-set(13px,$line-height);
 }
 
+.catalog-item__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .catalog-item__price {
   @include font-set(15px,24px,bold);
+  margin: 0;
 }
