@@ -5,7 +5,7 @@
 }
 
 .slider__button--prev {
-  width: 129px;
+  width: 50%;
   height: 52px;
   padding: 0;
 
@@ -17,7 +17,7 @@
 }
 
 .slider__button--next {
-  width: 129px;
+  width: 50%;
   height: 52px;
   padding: 0;
 
@@ -32,7 +32,7 @@
   .slider__controls {
     position: absolute;
     right: 50px;
-    bottom: 9px;
+    bottom: 11px;
   }
 
   .slider__button {

@@ -1,6 +1,5 @@
 .about-us {
-  padding-top: 34px;
-  padding-bottom: 27px;
+  padding-top: 33px;
 }
 
 .about-us__title {
@@ -17,7 +16,7 @@
 .about-us__item {
   position: relative;
 
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   padding-top: 55px;
 
   @include font-set(17px,20px,bold);
@@ -102,8 +101,7 @@
 
 @media (min-width: $tablet-width) {
   .about-us__wrapper {
-    margin-top: 67px;
-    margin-bottom: 20px;
+    padding-top: 35px;
   }
 
   .about-us__title {
@@ -113,13 +111,14 @@
   .about-us__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
+    padding-top: 19px;
   }
 
   .about-us__item {
     width: 50%;
     padding-top: 52px;
-    padding-bottom: 29px;
+    padding-bottom: 59px;
+    padding-right: 25px;
 
     @include font-set(20px,22px,bold);
 

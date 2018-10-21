@@ -1,28 +1,24 @@
-.weekly-good__wrapper {
-  position: relative;
-  padding: 0 30px;
-  padding-bottom: 36px;
-  margin: 0 auto;
-}
-
 .weekly-good {
   position: relative;
 
   &::after {
-    content: "";
-    position: absolute;
+    @include after;
 
     width: 100%;
     height: 6px;
 
     background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
     background-size: 102%;
   }
 }
 
+.weekly-good__wrapper {
+  position: relative;
+  padding-bottom: 36px;
+}
+
 .weekly-good__header {
-  padding-top: 29px;
+  padding-top: 28px;
   padding-bottom: 18px;
 }
 
@@ -54,13 +50,13 @@
 }
 
 .weekly-good__table {
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 }
 
 .weekly-good__row {
   height: 39px;
 
-  border-bottom: $border $grey-light;
+  border-bottom: $border;
 }
 
 .item-info__label {
@@ -72,7 +68,7 @@
 }
 
 .weekly-good__image {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .weekly-good__price {
@@ -88,22 +84,19 @@
 @media (min-width: $tablet-width) {
   .weekly-good {
     &::after {
-      content: "";
-      position: absolute;
+      @include after;
 
-      width: 771px;
+      width: 100%;
       height: 15px;
 
       background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: no-repeat;
       background-size: 102%;
     }
   }
 
   .weekly-good__wrapper {
     width: 768px;
-    padding: 0 52px;
-    padding-bottom: 52px;
+    padding-bottom: 50px;
   }
 
   .weekly-good__header {
@@ -112,17 +105,18 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 32px;
+    padding-right: 30px;
   }
 
   .weekly-good__title {
-    padding-top: 17px;
+    padding-top: 19px;
 
-    @include font-set(43px,50px,bold);
+    @include font-set(43px,50px);
   }
 
   .weekly-good__label {
     width: 72px;
-    margin-top: 21px;
+    margin-top: 23px;
     text-align: center;
 
     @include font-set($font-size,17px,bold);
@@ -134,21 +128,25 @@
   }
 
   .weekly-good__description {
-    width: 85%;
+    width: 82%;
 
     @include font-set($font-size,$line-height);
   }
 
   .weekly-good__table {
     margin-top: 38px;
-    margin-bottom: 8px;
+    margin-bottom: 58px;
 
     @include font-set(15px,20px);
   }
 
+  .item-info__value {
+    width: 191px;
+  }
+
   .weekly-good__image {
     position: absolute;
-    top: 130px;
+    top: 152px;
     right: 0;
 
     width: 50%;
@@ -160,6 +158,7 @@
 
   .weekly-good__price {
     margin-bottom: 34px;
+    width: 85%;
 
     @include font-set(20px,24px);
   }

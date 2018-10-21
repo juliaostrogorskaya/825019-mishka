@@ -15,3 +15,9 @@
   position: absolute;
   background-repeat: no-repeat;
 }
+
+@mixin after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+}

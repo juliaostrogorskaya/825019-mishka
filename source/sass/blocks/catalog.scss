@@ -43,3 +43,44 @@
   @include font-set(15px,24px,bold);
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .catalog-item__link {
+    width: 50%;
+    height: 334px;
+  }
+
+  .catalog-item__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog-item {
+    width: 316px;
+  }
+
+  .catalog-item__link {
+    width: 100%;
+    height: auto;
+  }
+
+  .catalog-item__description {
+    width: 100%;
+    flex-grow: 1;
+  }
+}

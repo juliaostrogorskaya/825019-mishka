@@ -1,11 +1,12 @@
 .wrapper {
   padding: 0 30px;
   margin: 0 auto;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .wrapper {
-    padding: 0 52px;
+    padding: 0 50px;
   }
 }
 
