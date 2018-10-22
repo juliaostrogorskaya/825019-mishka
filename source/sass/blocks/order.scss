@@ -1,7 +1,7 @@
 .order {
+  margin: 0 auto;
   padding: 0 30px;
   padding-top: 24px;
-  margin: 0 auto;
 }
 
 .order__text {
@@ -22,9 +22,10 @@
 }
 
 .order-form__title {
+  position: relative;
+
   margin: 0;
   padding-bottom: 18px;
-  position: relative;
 
   color: $primary-color;
   text-transform: uppercase;
@@ -32,11 +33,14 @@
   @include font-set($font-size,16px,bold);
 
   &::after {
-    @include after;
-    background-color: $primary-color;
-    height: 1px;
-    min-width: 200px;
     top: 6px;
+
+    min-width: 200px;
+    height: 1px;
+
+    background-color: $primary-color;
+
+    @include after;
   }
 }
 
@@ -47,38 +51,42 @@
 
 .radio-group__wrapper {
   position: relative;
+
   width: 100%;
   padding-bottom: 27px;
 }
 
 .radio-group__input + label::before {
-  @include before;
-  left: 0;
   top: -10px;
+  left: 0;
 
   width: 40px;
   height: 39px;
 
   border: 2px solid black;
   border-radius: 50%;
+
+  @include before;
 }
 
 .radio-group__input:checked + label::after {
-  @include after;
   top: 1px;
   left: 12px;
 
   width: 16px;
   height: 16px;
 
-  border-radius: 50%;
   background-color: $primary-color-form;
+  border-radius: 50%;
+
+  @include after;
 }
 
 .radio-group__label {
-  @include font-set($font-size,18px,bold);
-  padding-left: 64px;
   display: block;
+  padding-left: 64px;
+
+  @include font-set($font-size,18px,bold);
 }
 
 .checkbox-group {
@@ -89,13 +97,12 @@
 .checkbox-group__wrapper {
   position: relative;
 
+  padding-top: 5px;
   padding-bottom: 39px;
   padding-left: 63px;
-  padding-top: 5px;
 }
 
 .checkbox-group__input + label::before {
-  @include before;
   top: -6px;
   left: 0;
 
@@ -103,10 +110,11 @@
   height: 39px;
 
   border: 2px solid black;
+
+  @include before;
 }
 
 .checkbox-group__input:checked + label::after {
-  @include after;
   left: 9px;
 
   width: 22px;
@@ -114,11 +122,14 @@
 
   background-image: url("../img/icon-tick.svg");
   background-size: contain;
+
+  @include after;
 }
 
 .checkbox-group__label {
-  @include font-set($font-size,18px,bold);
   display: block;
+
+  @include font-set($font-size,18px,bold);
 }
 
 .field-group {
@@ -127,21 +138,23 @@
 }
 
 .field-group__wrapper {
-  padding-bottom: 25px;
   margin-top: -3px;
+  padding-bottom: 25px;
 }
 
 .field-group__label {
-  @include font-set($font-size,18px,bold);
   display: block;
   padding-bottom: 11px;
+
+  @include font-set($font-size,18px,bold);
 }
 
 .field-group__input {
+  width: 100%;
+  padding-bottom: 14px;
+
   border: none;
   border-bottom: 2px solid $black;
-  padding-bottom: 14px;
-  width: 100%;
 }
 
 .field-group-contacts {
@@ -153,20 +166,20 @@
 }
 
 .field-group__textarea {
-  width: 100%;
   display: block;
+  width: 100%;
   min-height: 142px;
-  padding-left: 13px;
   padding-top: 9px;
   padding-right: 5px;
   padding-bottom: 9px;
+  padding-left: 13px;
 
   border: 2px solid $black;
 }
 
 .order-form__footer {
-  padding-bottom: 55px;
   padding-top: 16px;
+  padding-bottom: 55px;
 }
 
 .order-form__required {
@@ -192,8 +205,9 @@
 
   .order__text {
     width: 89%;
-    margin-bottom: 69px;
-    padding-top: 80px;
+    margin-bottom: 70px;
+    padding-top: 76px;
+    padding-right: 50px;
     padding-left: 50px;
 
     @include font-set($font-size,$line-height);
@@ -201,6 +215,7 @@
 
   .order__form {
     margin: 0;
+    padding: 0;
   }
 
   .order-form__title {
@@ -208,34 +223,58 @@
   }
 
   .order-form__group {
-    margin-bottom: 14px;
+    padding-right: 50px;
+    padding-left: 50px;
 
     &:nth-of-type(2) {
       margin-bottom: 62px;
       padding-top: 62px;
-      padding-bottom: 13px;
+      padding-bottom: 9px;
 
       background-color: $grey-light;
+    }
+
+    &:nth-of-type(4) {
+      padding-top: 64px;
+
+      background-color: $grey-light;
+    }
+
+    &:nth-of-type(5) {
+      margin-bottom: 62px;
+      padding-bottom: 18px;
+
+      background-color: $grey-light;
+    }
+
+    &:last-of-type {
+      margin-bottom: 36px;
     }
   }
 
   .order-form__wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 49px;
+  }
+
+  .radio-group {
+    padding-top: 4px;
+    padding-bottom: 9px;
   }
 
   .radio-group__wrapper {
-    padding-bottom: 46px;
-    padding-left: 210px;
+    padding-bottom: 60px;
+    padding-left: 130px;
   }
 
   .radio-group__label {
+    padding-left: 83px;
+
     @include font-set(19px,18px);
   }
 
   .radio-group__input + label::before {
-    top: -13px;
+    top: -17px;
     left: 131px;
 
     width: 52px;
@@ -243,21 +282,24 @@
   }
 
   .radio-group__input:checked + label::after {
-    top: 3px;
-    left: 146px;
+    top: 0;
+    left: 147px;
 
     width: 22px;
     height: 22px;
+
     background-color: $primary-color-form;
   }
 
   .checkbox-group__label {
+    padding-left: 107px;
+
     @include font-set(19px,18px);
   }
 
   .checkbox-group__input + label::before {
     top: -13px;
-    left: 121px;
+    left: 26px;
 
     width: 54px;
     height: 52px;
@@ -274,23 +316,31 @@
   .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -48px;
-    padding-left: 45px;
+    margin-top: -53px;
+    padding-left: 140px;
   }
 
   .checkbox-group__wrapper {
     width: 50%;
-    padding-bottom: 46px;
-    padding-left: 200px;
+    padding-bottom: 54px;
+    padding-left: 0;
   }
 
 
   .field-group {
-    margin-bottom: 62px;
+    margin-top: -40px;
+    padding-bottom: 0;
+  }
+
+  .field-group__wrapper {
+    display: flex;
+    margin-top: -10px;
+    padding-bottom: 50px;
+    padding-left: 168px;
   }
 
   .field-group__label {
-    padding-right: 38px;
+    padding-right: 29px;
 
     @include font-set(19px,18px);
   }
@@ -298,14 +348,38 @@
   .field-group__input {
     width: 375px;
     padding-bottom: 13px;
+    padding-left: 15px;
+
+    background-color: transparent;
+  }
+
+  .field-group-text {
+    margin-top: -19px;
+    padding-left: 128px;
   }
 
   .order-form__footer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 50px;
+    padding-bottom: 31px;
+    padding-left: 50px;
   }
 
   .order-form__required {
     order: 2;
+
+    @include font-set($font-size,$line-height);
   }
+
+  .order-form__button {
+    width: 230px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }
