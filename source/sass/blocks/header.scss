@@ -91,6 +91,10 @@
     @include font-set(53px,57px);
   }
 
+  .page-header__title {
+    padding-bottom: 96px;
+  }
+
   .page-header__intro-text {
     font-size: 15px;
   }
