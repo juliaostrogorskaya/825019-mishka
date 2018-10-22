@@ -381,5 +381,57 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order__text {
+    width: 82%;
+    padding-top: 126px;
+    padding-right: 224px;
+    padding-left: 224px;
+  }
 
+  .order-form__wrapper {
+    padding-left: 64px;
+  }
+
+  .radio-group__wrapper {
+    padding-left: 74px;
+  }
+
+  .radio-group__input + label::before {
+    left: 76px;
+  }
+
+  .radio-group__input:checked + label::after {
+    left: 91px;
+  }
+
+  .checkbox-group {
+    padding-right: 85px;
+    padding-left: 85px;
+  }
+
+  .checkbox-group__wrapper {
+    width: 26%;
+    padding-right: 40px;
+  }
+
+  .field-group {
+    margin-top: 0;
+  }
+
+  .field-group__wrapper {
+    padding-left: 73px;
+  }
+
+  .field-group-contacts {
+    padding-left: 77px;
+  }
+
+  .field-group-text {
+    padding-left: 73px;
+  }
+
+  .order-form__footer {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
 }
