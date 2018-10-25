@@ -1,6 +1,5 @@
 .order {
   margin: 0 auto;
-  padding: 0 30px;
   padding-top: 24px;
 }
 
@@ -8,6 +7,8 @@
   width: 90%;
   margin: 0;
   margin-bottom: 27px;
+  padding-right: 30px;
+  padding-left: 30px;
 
   color: $secondary-color;
 
@@ -15,15 +16,11 @@
 }
 
 .order-form__group {
-  margin: 0;
-  padding: 0;
-
   border: none;
 }
 
 .order-form__title {
-  position: relative;
-
+  display: flex;
   margin: 0;
   padding-bottom: 18px;
 
@@ -33,14 +30,15 @@
   @include font-set($font-size,16px,bold);
 
   &::after {
-    top: 6px;
+    content: "";
 
-    min-width: 200px;
+    flex-grow: 1;
+    align-self: center;
+    width: 130px;
     height: 1px;
+    margin-left: 25px;
 
     background-color: $primary-color;
-
-    @include after;
   }
 }
 
@@ -178,8 +176,11 @@
 }
 
 .order-form__footer {
+  margin: 0 auto;
   padding-top: 16px;
+  padding-right: 30px;
   padding-bottom: 55px;
+  padding-left: 30px;
 }
 
 .order-form__required {
@@ -219,17 +220,24 @@
   }
 
   .order-form__title {
+    display: block;
+    width: 166px;
     padding-top: 6px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order-form__options {
+    width: 501px;
   }
 
   .order-form__group {
-    padding-right: 50px;
-    padding-left: 50px;
-
     &:nth-of-type(2) {
       margin-bottom: 62px;
       padding-top: 62px;
-      padding-bottom: 9px;
+      padding-bottom: 16px;
 
       background-color: $grey-light;
     }
@@ -264,7 +272,6 @@
 
   .radio-group__wrapper {
     padding-bottom: 60px;
-    padding-left: 130px;
   }
 
   .radio-group__label {
@@ -275,7 +282,6 @@
 
   .radio-group__input + label::before {
     top: -17px;
-    left: 131px;
 
     width: 52px;
     height: 53px;
@@ -283,7 +289,6 @@
 
   .radio-group__input:checked + label::after {
     top: 0;
-    left: 147px;
 
     width: 22px;
     height: 22px;
@@ -292,14 +297,13 @@
   }
 
   .checkbox-group__label {
-    padding-left: 107px;
+    padding-left: 82px;
 
     @include font-set(19px,18px);
   }
 
   .checkbox-group__input + label::before {
     top: -13px;
-    left: 26px;
 
     width: 54px;
     height: 52px;
@@ -307,7 +311,6 @@
 
   .checkbox-group__input:checked + label::after {
     top: 3px;
-    left: 131px;
 
     width: 33px;
     height: 22px;
@@ -316,19 +319,17 @@
   .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -53px;
-    padding-left: 140px;
+    padding: 0;
   }
 
   .checkbox-group__wrapper {
     width: 50%;
-    padding-bottom: 54px;
+    margin-bottom: 14px;
     padding-left: 0;
   }
 
 
   .field-group {
-    margin-top: -40px;
     padding-bottom: 0;
   }
 
@@ -336,7 +337,14 @@
     display: flex;
     margin-top: -10px;
     padding-bottom: 50px;
-    padding-left: 168px;
+  }
+
+  .field-group-contacts {
+    width: 501px;
+
+    input {
+      width: 100%;
+    }
   }
 
   .field-group__label {
@@ -346,6 +354,7 @@
   }
 
   .field-group__input {
+    flex-grow: 1;
     width: 375px;
     padding-bottom: 13px;
     padding-left: 15px;
@@ -355,7 +364,6 @@
 
   .field-group-text {
     margin-top: -19px;
-    padding-left: 128px;
   }
 
   .order-form__footer {
@@ -382,35 +390,28 @@
 
 @media (min-width: $desktop-width) {
   .order__text {
-    width: 82%;
+    width: 74%;
+    margin: 0 auto;
+    margin-bottom: 70px;
     padding-top: 126px;
-    padding-right: 224px;
-    padding-left: 224px;
+    padding-right: 112px;
+    padding-left: 112px;
   }
 
-  .order-form__wrapper {
-    padding-left: 64px;
+  .order-form__options {
+    width: 726px;
   }
 
-  .radio-group__wrapper {
-    padding-left: 74px;
+  .order-form__group {
+    padding: 0 112px;
   }
 
-  .radio-group__input + label::before {
-    left: 76px;
-  }
-
-  .radio-group__input:checked + label::after {
-    left: 91px;
-  }
-
-  .checkbox-group {
-    padding-right: 85px;
-    padding-left: 85px;
+  .radio-group {
+    padding-bottom: 7px;
   }
 
   .checkbox-group__wrapper {
-    width: 26%;
+    width: 33%;
     padding-right: 40px;
   }
 
@@ -431,8 +432,8 @@
   }
 
   .order-form__footer {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 112px;
+    padding-left: 112px;
   }
 
   .field-group__textarea {

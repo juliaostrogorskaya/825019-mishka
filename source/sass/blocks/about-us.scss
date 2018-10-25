@@ -1,5 +1,9 @@
 .about-us {
-  padding-top: 33px;
+  padding-top: 46px;
+}
+
+.about-us__wrapper {
+  position: relative;
 }
 
 .about-us__title {
@@ -16,86 +20,44 @@
 .about-us__item {
   position: relative;
 
-  padding-bottom: 30px;
   padding-top: 55px;
+  padding-bottom: 30px;
 
   @include font-set(17px,20px,bold);
 
   &--flower {
-    &::before {
-      @include before;
-      top: 0;
-      left: 8px;
-
-      width: 32px;
-      height: 37px;
-
-      background-image: url("../img/icon-feature-flower.svg");
-    }
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: 8px 0;
   }
 
   &--money {
-    &::before {
-      @include before;
-      top: 0;
-
-      width: 47px;
-      height: 27px;
-
-      background-image: url("../img/icon-feature-money.svg");
-    }
+    background-image: url("../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
   }
 
   &--heart {
-    &::before {
-      @include before;
-      top: 6px;
-      left: 7px;
-
-      width: 34px;
-      height: 27px;
-
-      background-image: url("../img/icon-feature-heart.svg");
-    }
+    background-image: url("../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
   }
 
   &--skein {
-    &::before {
-      @include before;
-      top: 3px;
-      left: 3px;
-
-      width: 35px;
-      height: 34px;
-
-      background-image: url("../img/icon-feature-ball.svg");
-    }
+    background-image: url("../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
   }
 
   &--rocket {
-    &::before {
-      @include before;
-      top: 4px;
-      left: -6px;
-
-      width: 55px;
-      height: 23px;
-
-      background-image: url("../img/icon-feature-rocket.svg");
-    }
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-position: -6px 4px;
   }
 
   &--gift {
-    &::before {
-      @include before;
-      top: 2px;
-      left: 3px;
-
-      width: 33px;
-      height: 32px;
-
-      background-image: url("../img/icon-feature-gift.svg");
-    }
+    background-image: url("../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 2px;
   }
 }
 
@@ -117,8 +79,8 @@
   .about-us__item {
     width: 50%;
     padding-top: 52px;
-    padding-bottom: 59px;
     padding-right: 25px;
+    padding-bottom: 59px;
 
     @include font-set(20px,22px,bold);
 
@@ -154,13 +116,14 @@
   }
 
   .about-us__title {
-    @include font-set(53px,57px);
     padding-left: 175px;
+
+    @include font-set(53px,57px);
   }
 
   .about-us__list {
-    padding-left: 175px;
     padding-right: 122px;
+    padding-left: 175px;
   }
 
   .about-us__item {

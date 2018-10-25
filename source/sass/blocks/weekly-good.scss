@@ -1,20 +1,11 @@
 .weekly-good {
   position: relative;
-
-  &::after {
-    @include after;
-
-    width: 100%;
-    height: 6px;
-
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-size: 102%;
-  }
 }
 
 .weekly-good__wrapper {
   position: relative;
-  padding-bottom: 36px;
+
+  padding-bottom: 23px;
 }
 
 .weekly-good__header {
@@ -81,29 +72,22 @@
   @include font-set($font-size,24px,bold);
 }
 
+.weekly-good__button {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
-  .weekly-good {
-    &::after {
-      @include after;
-
-      width: 100%;
-      height: 15px;
-
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-size: 102%;
-    }
-  }
-
   .weekly-good__wrapper {
     width: 768px;
-    padding-bottom: 50px;
+    padding-bottom: 37px;
   }
 
   .weekly-good__header {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     margin-bottom: 32px;
     padding-right: 30px;
   }
@@ -117,14 +101,15 @@
   .weekly-good__label {
     width: 72px;
     margin-top: 23px;
+
     text-align: center;
 
     @include font-set($font-size,17px,bold);
   }
 
   .weekly-good__info {
-    margin-bottom: 50px;
     width: 50%;
+    margin-bottom: 50px;
   }
 
   .weekly-good__description {
@@ -157,8 +142,8 @@
   }
 
   .weekly-good__price {
-    margin-bottom: 34px;
     width: 85%;
+    margin-bottom: 34px;
 
     @include font-set(20px,24px);
   }
@@ -170,15 +155,15 @@
 
 @media (min-width: $desktop-width) {
   .weekly-good__wrapper {
-    padding-top: 78px;
-    padding-bottom: 72px;
     width: auto;
+    padding-top: 78px;
+    padding-bottom: 60px;
   }
 
   .weekly-good__header {
     flex-direction: row-reverse;
-    padding-left: 45px;
     width: 69%;
+    padding-left: 45px;
   }
 
   .weekly-good__title {
@@ -188,13 +173,13 @@
   }
 
   .weekly-good__info {
-    padding-left: 175px;
     width: auto;
+    padding-left: 175px;
   }
 
   .weekly-good__description {
-    margin-bottom: 50px;
     width: 33%;
+    margin-bottom: 50px;
   }
 
   .weekly-good__footer {

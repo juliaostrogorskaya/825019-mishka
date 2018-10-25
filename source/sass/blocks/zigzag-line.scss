@@ -1,0 +1,41 @@
+.zigzag-line {
+  &::before {
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 102%;
+
+    @include before;
+  }
+}
+
+.about-us .zigzag-line {
+  &::before {
+    top: -35px;
+  }
+}
+
+.contacts .zigzag-line {
+  &::before {
+    top: -44px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .zigzag-line {
+    &::before {
+      height: 16px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .zigzag-line {
+    &::before {
+      height: 25px;
+    }
+  }
+}

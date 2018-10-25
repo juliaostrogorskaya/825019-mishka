@@ -1,8 +1,10 @@
 .contacts {
-  padding-top: 20px;
+  padding-top: 46px;
 }
 
 .contacts__wrapper {
+  position: relative;
+
   padding-bottom: 6px;
 }
 
@@ -54,8 +56,8 @@
 }
 
 .contacts__button {
-  margin: 0 auto 39px;
   display: block;
+  margin: 0 auto 39px;
 }
 
 @media (min-width: $tablet-width) {
@@ -120,8 +122,8 @@
 
   .contacts__wrapper {
     display: block;
-    padding-bottom: 51px;
     padding-top: 120px;
+    padding-bottom: 51px;
   }
 
   .contacts__item {
