@@ -112,18 +112,16 @@
 
 @media (min-width: $desktop-width) {
   .about-us__wrapper {
-    padding-top: 52px;
+    padding-top: 50px;
+    padding-left: 275px;
   }
 
   .about-us__title {
-    padding-left: 175px;
-
     @include font-set(53px,57px);
   }
 
   .about-us__list {
     padding-right: 122px;
-    padding-left: 175px;
   }
 
   .about-us__item {

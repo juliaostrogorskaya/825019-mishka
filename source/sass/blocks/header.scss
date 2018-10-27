@@ -38,17 +38,18 @@
   @include font-set(27px,$line-height,bold);
 }
 
-
 @media (min-width: $tablet-width) {
   .page-header__intro {
+    margin: 0 auto;
     margin-top: -68px;
-    padding: 0 52px;
+    padding: 0 50px;
+    max-width: 768px;
 
-    border: $border;
+    border-top: $border;
   }
 
   .page-header__intro--image {
-    height: 746px;
+    height: 627px;
   }
 
   .page-header__intro-text {
@@ -67,7 +68,7 @@
   }
 
   .page-header__title {
-    width: 60%;
+    width: 700px;
     padding-top: 55px;
 
     color: $black;
@@ -83,6 +84,7 @@
 @media (min-width: $desktop-width) {
   .page-header__intro {
     padding: 0 100px;
+    min-width: 1150px;
   }
 
   .page-header__title,

@@ -138,10 +138,9 @@
 
     background-color: transparent;
     border: none;
-    border-right: $border;
 
     &--logo {
-      min-width: 320px;
+      width: 320px;
 
       a {
         padding-top: 22px;
@@ -152,9 +151,12 @@
 
     &--search {
       order: 1;
-      width: 82px;
+      width: 84px;
+      border-right: $border;
+      border-left: $border;
 
       a {
+        padding: 0;
         padding-top: 36px;
 
         font-size: 0;
@@ -206,7 +208,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    max-width: 1250px;
+    max-width: 1150px;
   }
 
   .site-list__item {
@@ -216,7 +218,7 @@
       border-right: $border;
 
       a {
-        padding-right: 44px;
+        padding-right: 33px;
 
         font-size: $font-size;
       }
@@ -226,8 +228,8 @@
       order: 2;
 
       a {
-        padding-right: 18px;
-        padding-left: 34px;
+        padding-right: 0;
+        padding-left: 36px;
 
         font-size: $font-size;
       }
@@ -235,6 +237,11 @@
 
     &--logo {
       order: 3;
+      margin-right: 103px;
+      margin-left: 74px;
+      padding: 0;
+      width: 149px;
+      height: 72px;
 
       a {
         text-align: center;
@@ -262,6 +269,7 @@
       a {
         padding-top: 19px;
         padding-left: 0;
+        padding-right: 23px;
 
         font-size: 15px;
       }
@@ -275,7 +283,7 @@
 
       a {
         padding-top: 19px;
-        padding-left: 37px;
+        padding-left: 36px;
 
         font-size: 15px;
       }
