@@ -1,78 +1,68 @@
 .feedback {
-  &::after {
-    content: "";
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: no-repeat;
-    background-size: 102%;
-    width: 319px;
-    height: 6px;
-    position: absolute;
-  }
-}
+  position: relative;
 
-.feedback__wrapper {
-  padding-left: 30px;
-  margin-bottom: 44px;
+  padding-top: 26px;
+  padding-bottom: 41px;
 }
 
 .feedback__title {
   margin: 0;
   margin-bottom: 25px;
 
-  @include font-set(25px,$line-height,bold);
   text-align: left;
   color: $black;
+
+  @include font-set(25px,$line-height,bold);
 }
 
 .feedback__item {
   margin: 0;
   margin-top: 25px;
-  padding-right: 38px;
 }
 
 .feedback__text {
   margin: 0;
   margin-bottom: 24px;
+  padding-right: 5px;
 
-  @include font-set(15px,$line-height);
   text-align: left;
   color: $secondary-color;
+
+  @include font-set(15px,$line-height);
 }
 
 .feedback__author-name {
-  @include font-set($font-size,24px);
   text-align: left;
   color: $black;
+
+  @include font-set($font-size,24px);
 }
 
 .feedback__author-hashtag {
-  @include font-set($font-size,$line-height);
   color: $secondary-color;
   font-style: normal;
+
+  @include font-set($font-size,$line-height);
+}
+
+.feedback__button {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
-    &::after {
-      content: "";
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: no-repeat;
-      background-size: 102%;
-      width: 771px;
-      height: 15px;
-      position: absolute;
-    }
+    padding-top: 24px;
   }
 
   .feedback__wrapper {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    padding-left: 48px;
-    padding-right: 52px;
     padding-top: 78px;
-    padding-bottom: 43px;
-    margin-bottom: 69px;
+    padding-bottom: 71px;
+
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
@@ -86,30 +76,41 @@
   }
 
   .feedback__text {
+    margin-bottom: 61px;
+    padding-right: 12px;
+
     @include font-set($font-size,$line-height);
-    margin-bottom: 58px;
   }
 
   .feedback__author-name {
+    display: block;
+    padding-bottom: 3px;
+
     font-size: 18px;
   }
 
   .feedback__button {
     order: 1;
-    margin-left: auto;
+    align-self: baseline;
     width: 175px;
+    margin: 0;
+    margin-left: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
-    margin-left: 100px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 68px;
+    padding-left: 100px;
   }
 
   .feedback__wrapper {
-    padding-left: 172px;
     padding-top: 73px;
+    padding-right: 0;
     padding-bottom: 94px;
+    padding-left: 172px;
   }
 
   .feedback__title {
@@ -117,8 +118,8 @@
   }
 
   .feedback__text {
-    margin-bottom: 37px;
-    padding-right: 100px;
+    margin-bottom: 39px;
+    padding-right: 120px;
   }
 
   .feedback__button {

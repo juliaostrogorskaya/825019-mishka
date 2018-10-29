@@ -5,7 +5,7 @@
 }
 
 .slider__button--prev {
-  width: 129px;
+  width: 50%;
   height: 52px;
   padding: 0;
 
@@ -13,11 +13,11 @@
   background-image: url("../../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: $border $grey-light;
+  border: $border;
 }
 
 .slider__button--next {
-  width: 129px;
+  width: 50%;
   height: 52px;
   padding: 0;
 
@@ -25,14 +25,14 @@
   background-image: url("../../img/icon-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border: $border $grey-light;
+  border: $border;
 }
 
 @media (min-width: $tablet-width) {
   .slider__controls {
     position: absolute;
     right: 50px;
-    bottom: 9px;
+    bottom: 11px;
   }
 
   .slider__button {
@@ -44,5 +44,6 @@
 @media (min-width: $desktop-width) {
   .slider__controls {
     bottom: 60px;
+    right: 0;
   }
 }

@@ -9,3 +9,15 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+@mixin after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+}

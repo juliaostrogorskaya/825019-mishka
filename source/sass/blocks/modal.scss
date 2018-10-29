@@ -1,25 +1,101 @@
 .modal {
+  display: none;
+  width: 320px;
+  height: 336px;
+  margin: 0 auto;
+  padding-top: 34px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  padding-left: 30px;
+
+  border: $border;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
-  border: $border $grey-dark;
-  padding: 30px;
 }
 
 .modal__title {
-  margin: 0;
+  width: 60%;
+  margin: 0 auto;
+
+  text-align: center;
+  text-transform: uppercase;
 
   @include font-set(25px,$line-height,bold);
-  text-align: center;
 }
 
 .modal__text {
-  @include font-set(15px,$line-height);
-  color: $secondary-color;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 21px;
+
   text-align: center;
+  color: $secondary-color;
+
+  @include font-set(15px,$line-height);
+}
+
+.chooze-size__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.chooze-size__radio + label {
+  position: relative;
+
+  display: block;
+  width: 82px;
+  height: 52px;
+  padding-top: 18px;
+
+  vertical-align: middle;
+  text-align: center;
+  color: $secondary-color;
+
+  border: 2px solid $grey-light;
+
+  @include font-set($font-size,16px,bold);
+}
+
+.chooze-size__radio:checked + label {
+  border: 2px solid $primary-color-form;
 }
 
 .chooze-size__button {
-  background-color: $primary-color;
-  color: $white;
-  border: none;
+  display: block;
+  height: 52px;
+  margin: 0 auto;
   padding: 0;
+
+  color: $white;
+
+  background-color: $primary-color;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+    height: 336px;
+    padding-top: 50px;
+    padding-right: 106px;
+    padding-left: 107px;
+  }
+
+  .chooze-size__radio + label {
+    width: 112px;
+  }
+
+  .modal__title {
+    width: 100%;
+
+    @include font-set(30px,57px);
+  }
+
+  .modal__text {
+    @include font-set($font-size,$line-height);
+  }
+
+  .chooze-size__button {
+    width: 350px;
+  }
 }

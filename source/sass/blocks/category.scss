@@ -3,9 +3,8 @@
 }
 
 .category__item {
-  width: 100%;
   padding-top: 27px;
-  padding-bottom: 24px;
+  padding-bottom: 30px;
   padding-left: 29px;
 
   &:first-of-type {
@@ -15,20 +14,23 @@
   &:last-of-type {
     background-color: $primary-color-dark;
   }
+
+  &--interior {
+    background-image: url("../../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 87% 57%;
+  }
 }
 
 .category__link {
-  @include font-set(19px,24px,bold);
+  display: inline-block;
+  width: 50%;
+
+  vertical-align: middle;
   text-align: left;
   color: $white;
-  display: inline-block;
-  width: 120px;
-}
 
-.category__item--interior {
-  background-image: url("../../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  background-position: 87% 57%;
+  @include font-set(19px,24px,bold);
 }
 
 .category__item--toys {
@@ -40,6 +42,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .category {
+    position: relative;
+
+    &::after {
+      bottom: -9px;
+
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+
+      @include after;
+    }
+  }
+
+  .category__list {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 50px;
+    background-color: #f9f9f9;
+  }
+
   .category__item {
     width: 50%;
     min-height: 119px;
@@ -54,23 +78,18 @@
     }
   }
 
-  .category__list {
-    display: flex;
-    margin-top: -119px;
-    margin-right: 52px;
-    margin-left: 52px;
-  }
-
   .category__link {
     @include font-set(20px,$line-height,bold);
-    padding-right: 120px;
-    width: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .category__list {
-    margin-right: 100px;
-    margin-left: 100px;
+    padding: 0 100px;
+  }
+
+  .category__text {
+    display: block;
+    width: 50%;
   }
 }

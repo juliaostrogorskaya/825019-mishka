@@ -1,17 +1,14 @@
 .order {
+  margin: 0 auto;
   padding-top: 24px;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-.order__form {
-  margin-left: -14px;
 }
 
 .order__text {
   width: 90%;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 27px;
+  padding-right: 30px;
+  padding-left: 30px;
 
   color: $secondary-color;
 
@@ -19,62 +16,48 @@
 }
 
 .order-form__group {
-  margin-bottom: 20px;
-  padding: 0;
-
   border: none;
-
-  &:last-of-type {
-    margin-bottom: 0;
-    padding: 0;
-    padding-left: 14px;
-  }
+  padding: 0;
+  margin: 0;
 }
 
 .order-form__title {
+  display: flex;
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 18px;
 
   color: $primary-color;
   text-transform: uppercase;
 
   @include font-set($font-size,16px,bold);
+
+  &::after {
+    content: "";
+
+    flex-grow: 1;
+    align-self: center;
+    width: 130px;
+    height: 1px;
+    margin-left: 25px;
+
+    background-color: $primary-color;
+  }
 }
 
-.radio-group__label {
-  @include font-set($font-size,18px,bold);
-}
-
-.checkbox-group__label {
-  @include font-set($font-size,18px,bold);
-}
-
-.field-group__label {
-  @include font-set($font-size,18px,bold);
-}
-
-.field-group__input {
-  border: none;
-  border-bottom: 2px solid $black;
-}
-
-.field-group__textarea {
-  min-width: 260px;
-  min-height: 142px;
-  padding-left: 12px;
-
-  border: 2px solid $black;
+.radio-group {
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 .radio-group__wrapper {
   position: relative;
 
-  padding-left: 63px;
+  width: 100%;
+  padding-bottom: 27px;
 }
 
 .radio-group__input + label::before {
-  content: "";
-  position: absolute;
+  top: -10px;
   left: 0;
 
   width: 40px;
@@ -82,31 +65,44 @@
 
   border: 2px solid black;
   border-radius: 50%;
+
+  @include before;
 }
 
 .radio-group__input:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 11px;
+  top: 2px;
   left: 12px;
 
   width: 16px;
   height: 16px;
 
-  border: 8px solid #62d1ba;
+  background-color: $primary-color-form;
   border-radius: 50%;
+
+  @include after;
+}
+
+.radio-group__label {
+  display: block;
+  padding-left: 64px;
+
+  @include font-set($font-size,18px,bold);
+}
+
+.checkbox-group {
+  padding-top: 13px;
+  padding-bottom: 6px;
 }
 
 .checkbox-group__wrapper {
   position: relative;
 
-  padding-bottom: 32px;
+  padding-top: 5px;
+  padding-bottom: 39px;
   padding-left: 63px;
 }
 
 .checkbox-group__input + label::before {
-  content: "";
-  position: absolute;
   top: -6px;
   left: 0;
 
@@ -114,40 +110,94 @@
   height: 39px;
 
   border: 2px solid black;
+
+  @include before;
 }
 
 .checkbox-group__input:checked + label::after {
-  content: "";
-  position: absolute;
-  left: 4px;
+  left: 9px;
 
-  width: 40px;
-  height: 39px;
+  width: 22px;
+  height: 16px;
 
-  background-image: url("../../img/icon-tick.svg");
-  background-repeat: no-repeat;
+  background-image: url("../img/icon-tick.svg");
+  background-size: contain;
+
+  @include after;
+}
+
+.checkbox-group__label {
+  display: block;
+
+  @include font-set($font-size,18px,bold);
+}
+
+.field-group {
+  padding-top: 14px;
+  padding-bottom: 9px;
 }
 
 .field-group__wrapper {
-  padding-bottom: 22px;
+  margin-top: -3px;
+  padding-bottom: 25px;
+}
+
+.field-group__label {
+  display: block;
+  padding-bottom: 11px;
+
+  @include font-set($font-size,18px,bold);
+}
+
+.field-group__input {
+  width: 100%;
+  padding-bottom: 14px;
+
+  border: none;
+  border-bottom: 2px solid $black;
+}
+
+.field-group-contacts {
+  padding-bottom: 33px;
+}
+
+.field-group-text {
+  padding-top: 7px;
+}
+
+.field-group__textarea {
+  display: block;
+  width: 100%;
+  min-height: 142px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  line-height: 18px;
+
+  border: 2px solid $black;
+}
+
+.order-form__footer {
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-right: 30px;
+  padding-bottom: 55px;
+  padding-left: 30px;
 }
 
 .order-form__required {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   color: $secondary-color;
 
   @include font-set(14px,16px);
 }
 
-.order-form__footer {
-  margin-bottom: 55px;
-  padding-left: 10px;
-}
-
 .order-form__button {
-  padding-top: 0;
+  display: block;
+  margin: 0 auto;
 
   background-color: $white;
 }
@@ -159,8 +209,9 @@
 
   .order__text {
     width: 89%;
-    margin-bottom: 69px;
-    padding-top: 80px;
+    margin-bottom: 70px;
+    padding-top: 76px;
+    padding-right: 50px;
     padding-left: 50px;
 
     @include font-set($font-size,$line-height);
@@ -168,64 +219,95 @@
 
   .order__form {
     margin: 0;
+    padding: 0;
   }
 
   .order-form__title {
-    padding-top: 6px;
+    display: block;
+    width: 166px;
+    padding-top: 7px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order-form__options {
+    width: 501px;
   }
 
   .order-form__group {
-    margin-bottom: 14px;
-
     &:nth-of-type(2) {
-      margin-bottom: 62px;
+      margin-bottom: 60px;
       padding-top: 62px;
-      padding-bottom: 13px;
+      padding-bottom: 16px;
 
       background-color: $grey-light;
+    }
+
+    &:nth-of-type(4) {
+      padding-top: 64px;
+
+      background-color: $grey-light;
+    }
+
+    &:nth-of-type(5) {
+      margin-bottom: 62px;
+      padding-bottom: 18px;
+
+      background-color: $grey-light;
+    }
+
+    &:last-of-type {
+      margin-bottom: 36px;
     }
   }
 
   .order-form__wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 49px;
+  }
+
+  .radio-group {
+    padding-top: 4px;
+    padding-bottom: 9px;
   }
 
   .radio-group__wrapper {
-    padding-bottom: 46px;
-    padding-left: 210px;
+    padding-bottom: 60px;
   }
 
   .radio-group__label {
+    padding-left: 83px;
+
     @include font-set(19px,18px);
   }
 
   .radio-group__input + label::before {
-    top: -13px;
-    left: 131px;
+    top: -17px;
 
     width: 52px;
     height: 53px;
   }
 
   .radio-group__input:checked + label::after {
-    top: 3px;
-    left: 146px;
+    top: 0;
+    left: 15px;
 
     width: 22px;
     height: 22px;
 
-    border: 11px solid #62d1ba;
+    background-color: $primary-color-form;
   }
 
   .checkbox-group__label {
+    padding-left: 82px;
+
     @include font-set(19px,18px);
   }
 
   .checkbox-group__input + label::before {
     top: -13px;
-    left: 121px;
 
     width: 54px;
     height: 52px;
@@ -233,7 +315,6 @@
 
   .checkbox-group__input:checked + label::after {
     top: 3px;
-    left: 131px;
 
     width: 33px;
     height: 22px;
@@ -242,43 +323,123 @@
   .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -48px;
-    padding-left: 45px;
+    padding: 0;
   }
 
   .checkbox-group__wrapper {
     width: 50%;
-    padding-bottom: 46px;
-    padding-left: 200px;
+    margin-bottom: 14px;
+    padding-left: 0;
   }
 
 
   .field-group {
-    margin-bottom: 62px;
+    padding-bottom: 0;
   }
 
   .field-group__wrapper {
-    padding-bottom: 36px;
-    padding-left: 128px;
+    display: flex;
+    margin-top: -10px;
+    padding-bottom: 48px;
+  }
+
+  .field-group-contacts {
+    width: 501px;
+
+    input {
+      width: 100%;
+    }
   }
 
   .field-group__label {
-    padding-right: 38px;
+    padding-right: 29px;
 
     @include font-set(19px,18px);
   }
 
   .field-group__input {
+    flex-grow: 1;
     width: 375px;
     padding-bottom: 13px;
+    padding-left: 15px;
+    font-size: 19px;
+
+    background-color: transparent;
+  }
+
+  .field-group-text {
+    margin-top: -19px;
+  }
+
+  .field-group__textarea {
+    font-size: 19px;
   }
 
   .order-form__footer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 50px;
+    padding-bottom: 31px;
+    padding-left: 50px;
   }
 
   .order-form__required {
     order: 2;
+
+    @include font-set($font-size,$line-height);
+  }
+
+  .order-form__button {
+    width: 230px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__text {
+    width: 74%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding-top: 126px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .order-form__options {
+    width: 700px;
+  }
+
+  .order-form__title {
+    padding-left: 10px;
+    width: 126px;
+  }
+
+  .radio-group {
+    padding-bottom: 7px;
+  }
+
+  .checkbox-group {
+    width: 795px;
+  }
+
+  .checkbox-group__wrapper {
+    width: 33%;
+    padding-right: 40px;
+  }
+
+  .field-group {
+    margin-top: 0;
+  }
+
+  .order-form__footer {
+    padding-right: 225px;
+    padding-left: 225px;
+    max-width: 1150px;
+  }
+
+  .field-group__textarea {
+    width: 700px;
   }
 }
