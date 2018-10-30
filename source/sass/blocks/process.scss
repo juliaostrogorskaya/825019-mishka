@@ -32,11 +32,18 @@
   position: relative;
 }
 
+.production-process__image {
+  margin: 0 auto;
+  display: block;
+  height: 150px;
+}
+
 .production-process__play-button {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 10;
+  padding: 0;
 
   width: 101px;
   height: 77px;
@@ -46,7 +53,18 @@
   background-repeat: no-repeat;
   border: none;
   transform: translate(-50%, -50%);
-  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: all 0.4s ease;
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .process__footer {

@@ -29,6 +29,7 @@
   vertical-align: middle;
   text-align: left;
   color: $white;
+  text-decoration: none;
 
   @include font-set(19px,24px,bold);
 }
@@ -86,6 +87,7 @@
 @media (min-width: $desktop-width) {
   .category__list {
     padding: 0 100px;
+    max-width: 1150px;
   }
 
   .category__text {

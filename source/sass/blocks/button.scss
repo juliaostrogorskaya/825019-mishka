@@ -4,7 +4,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
-  @include font-set($font-size,20px,bold);
   vertical-align: middle;
   text-align: center;
   color: $secondary-color;
@@ -12,4 +11,20 @@
   text-decoration: none;
 
   border: $border-button;
+  outline: none;
+
+  @include font-set($font-size,20px,bold);
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    background-color: $secondary-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $secondary-color;
+  }
 }

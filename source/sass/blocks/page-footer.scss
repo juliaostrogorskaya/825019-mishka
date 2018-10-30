@@ -4,6 +4,15 @@
 
 .page-footer__logo {
   display: none;
+
+  svg:hover,
+  svg:focus {
+    fill: $primary-color-darker;
+  }
+
+  svg:active {
+    fill: rgba($primary-color-darker, 0.3);
+  }
 }
 
 .page-footer__social {
@@ -28,12 +37,27 @@
   }
 }
 
+.social__link {
+  path:hover,
+  path:focus {
+    fill: $primary-color-darker;
+  }
+
+  path:active {
+    fill: rgba($primary-color-darker, 0.3);
+  }
+}
+
 .page-footer__copyright {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 6px;
   padding-bottom: 12px;
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
 }
 
 .copyright__text {
@@ -49,6 +73,16 @@
 
 .copyright__image {
   margin-top: 3px;
+
+  &:hover,
+  &:focus {
+    fill: $primary-color-darker;
+  }
+
+  &:active {
+    fill: $primary-color-darker;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
