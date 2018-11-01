@@ -69,6 +69,15 @@
   @include before;
 }
 
+.radio-group__input + label:hover::before,
+.radio-group__input + label:focus::before {
+  border: 2px solid $primary-color-form;
+}
+
+.radio-group__input + label:active::before {
+  border: 2px solid rgba($secondary-color, 0.3);
+}
+
 .radio-group__input:checked + label::after {
   top: 2px;
   left: 12px;
@@ -126,6 +135,15 @@
   @include after;
 }
 
+.checkbox-group__input + label:hover::before,
+.checkbox-group__input + label:focus::before {
+  border: 2px solid $primary-color-form;
+}
+
+.checkbox-group__input + label:active::before {
+  border: 2px solid rgba($secondary-color, 0.3);
+}
+
 .checkbox-group__label {
   display: block;
 
@@ -155,10 +173,43 @@
 
   border: none;
   border-bottom: 2px solid $black;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid $primary-color-form;
+  }
+
+  &:hover + .field-group__icon-phone,
+  &:focus + .field-group__icon-phone,
+  &:active + .field-group__icon-phone,
+  &:hover + .field-group__icon-mail,
+  &:focus + .field-group__icon-mail,
+  &:active + .field-group__icon-mail, {
+    opacity: 1;
+    fill: $primary-color-form;
+  }
 }
 
 .field-group-contacts {
   padding-bottom: 33px;
+  position: relative;
+}
+
+.field-group__icon-phone,
+.field-group__icon-mail {
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+}
+
+.field-group__icon-phone {
+  right: 8px;
+}
+
+.field-group__icon-mail {
+  right: 4px;
 }
 
 .field-group-text {
@@ -176,6 +227,13 @@
   line-height: 18px;
 
   border: 2px solid $black;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid $primary-color-form;
+  }
 }
 
 .order-form__footer {
@@ -367,6 +425,14 @@
     background-color: transparent;
   }
 
+  .field-group__icon-phone {
+    right: 26px;
+  }
+
+  .field-group__icon-mail {
+    right: 22px;
+  }
+
   .field-group-text {
     margin-top: -19px;
   }
@@ -431,6 +497,14 @@
 
   .field-group {
     margin-top: 0;
+  }
+
+  .field-group__icon-phone {
+    right: 8px;
+  }
+
+  .field-group__icon-mail {
+    right: 4px;
   }
 
   .order-form__footer {
