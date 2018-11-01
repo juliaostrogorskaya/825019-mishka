@@ -398,7 +398,7 @@
   .field-group__wrapper {
     display: flex;
     margin-top: -10px;
-    padding-bottom: 48px;
+    padding-bottom: 49px;
   }
 
   .field-group-contacts {
@@ -411,6 +411,7 @@
 
   .field-group__label {
     padding-right: 29px;
+    padding-top: 3px;
 
     @include font-set(19px,18px);
   }

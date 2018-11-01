@@ -55,7 +55,8 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: contain;
 
-      @include after;
+      content: "";
+      position: absolute;
     }
   }
 

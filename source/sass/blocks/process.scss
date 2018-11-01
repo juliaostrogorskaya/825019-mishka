@@ -113,12 +113,14 @@
   .process__header {
     order: 1;
     width: 55%;
+    padding-top: 37px;
   }
 
   .process__title {
     padding-left: 69px;
 
     font-size: 20px;
+    background-position: 6px;
   }
 
   .production-process__image {
@@ -137,7 +139,7 @@
   }
 
   .process__text {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
 
     @include font-set(15px,$line-height);
   }

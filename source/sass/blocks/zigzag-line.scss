@@ -6,9 +6,11 @@
     height: 6px;
 
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: 102%;
+    background-size: contain;
+    background-repeat: repeat;
 
-    @include before;
+    content: "";
+    position: absolute;
   }
 }
 
@@ -27,7 +29,7 @@
 @media (min-width: $tablet-width) {
   .zigzag-line {
     &::before {
-      height: 16px;
+      height: 15px;
     }
   }
 }

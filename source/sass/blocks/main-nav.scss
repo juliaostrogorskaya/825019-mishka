@@ -65,6 +65,11 @@
 
   &--cart {
     border-bottom: $border;
+    position: relative;
+  }
+
+  &--search {
+    position: relative;
   }
 
   &--logo a {
@@ -87,6 +92,24 @@
   text-decoration: none;
 
   @include font-set($font-size,24px,bold);
+
+  svg {
+    position: absolute;
+    left: 32px;
+    top: 35px;
+    opacity: 0.2;
+
+    &:hover,
+    &:focus {
+      fill: $primary-color;
+      opacity: 1;
+    }
+
+    &:active {
+      fill: $primary-color;
+      opacity: 0.3;
+    }
+  }
 
   &:hover,
   &:focus {

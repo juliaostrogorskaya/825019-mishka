@@ -1,5 +1,4 @@
 .modal {
-  display: none;
   width: 320px;
   height: 336px;
   margin: 0 auto;
@@ -58,6 +57,11 @@
 
 .chooze-size__radio:checked + label {
   border: 2px solid $primary-color-form;
+}
+
+.chooze-size__radio + label:hover,
+.chooze-size__radio + label:focus {
+  border: 2px solid rgba($secondary-color, 0.3);
 }
 
 .chooze-size__button {
