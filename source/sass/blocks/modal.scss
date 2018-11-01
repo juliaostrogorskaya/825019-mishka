@@ -6,9 +6,22 @@
   padding-right: 30px;
   padding-bottom: 46px;
   padding-left: 30px;
+  background-color: $white;
+  z-index: 70;
+  bottom: -17px;
+  left: 0;
 
   border: $border;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.modal--closed {
+  display: none;
+}
+
+.modal--opened {
+  display: block;
+  position: absolute;
 }
 
 .modal__title {

@@ -92,6 +92,27 @@
           <footer class="weekly-good__footer">
             <p class="weekly-good__price">Цена: 990 руб.</p>
             <a class="weekly-good__button button" href="#">Заказать</a>
+            <section class="modal modal--add-cart modal--closed">
+              <h2 class="modal__title">Добавить в корзину</h2>
+              <p class="modal__text">Выберите размер:</p>
+              <form class="modal__form chooze-size" action="https://echo.htmlacademy.ru" method="get">
+                <div class="chooze-size__wrapper">
+                  <div class="chooze-size__wrapper-options">
+                    <input class="chooze-size__radio visually-hidden" id="S-size" type="radio" name="size" value="S" checked>
+                    <label class="chooze-size__label" for="S-size">S</label>
+                  </div>
+                  <div class="chooze-size__wrapper-options">
+                    <input class="chooze-size__radio visually-hidden" id="M-size" type="radio" name="size" value="M">
+                    <label class="chooze-size__label" for="M-size">M</label>
+                  </div>
+                  <div class="chooze-size__wrapper-options">
+                    <input class="chooze-size__radio visually-hidden" id="L-size" type="radio" name="size" value="L">
+                    <label class="chooze-size__label" for="L-size">L</label>
+                  </div>
+                </div>
+                <button class="chooze-size__button button" type="submit" name="button">Добавить</button>
+              </form>
+            </section>
           </footer>
         </div>
       </article>
@@ -205,28 +226,7 @@
         </div>
       </div>
     </footer>
-
-    <section class="modal modal--add-cart">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form class="modal__form chooze-size" action="https://echo.htmlacademy.ru" method="get">
-        <div class="chooze-size__wrapper">
-          <div class="chooze-size__wrapper-options">
-            <input class="chooze-size__radio visually-hidden" id="S-size" type="radio" name="size" value="S" checked>
-            <label class="chooze-size__label" for="S-size">S</label>
-          </div>
-          <div class="chooze-size__wrapper-options">
-            <input class="chooze-size__radio visually-hidden" id="M-size" type="radio" name="size" value="M">
-            <label class="chooze-size__label" for="M-size">M</label>
-          </div>
-          <div class="chooze-size__wrapper-options">
-            <input class="chooze-size__radio visually-hidden" id="L-size" type="radio" name="size" value="L">
-            <label class="chooze-size__label" for="L-size">L</label>
-          </div>
-        </div>
-        <button class="chooze-size__button button" type="submit" name="button">Добавить</button>
-      </form>
-    </section>
     <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

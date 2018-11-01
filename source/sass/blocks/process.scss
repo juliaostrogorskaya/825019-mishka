@@ -86,6 +86,7 @@
 .process__text {
   margin: 0;
   margin-bottom: 29px;
+  width: 92%;
 
   color: $secondary-color;
 
@@ -140,6 +141,7 @@
 
   .process__text {
     margin-bottom: 32px;
+    width: 100%;
 
     @include font-set(15px,$line-height);
   }
@@ -165,9 +167,11 @@
   }
 
   .process__title {
-    width: 90%;
-    margin-top: 21px;
-    margin-left: 0;
+    width: 70%;
+    padding: 0;
+    padding-top: 48px;
+    margin-left: 54px;
+    background-position: top left;
   }
 
   .production-process__player {
