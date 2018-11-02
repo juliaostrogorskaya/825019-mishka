@@ -4,6 +4,15 @@
   margin-bottom: 38px;
 }
 
+.slider__button:hover,
+.slider__button:focus {
+  opacity: 0.6;
+}
+
+.slider__button:active {
+  opacity: 0.3;
+}
+
 .slider__button--prev {
   width: 50%;
   height: 52px;
@@ -32,7 +41,7 @@
   .slider__controls {
     position: absolute;
     right: 50px;
-    bottom: 11px;
+    bottom: 37px;
   }
 
   .slider__button {

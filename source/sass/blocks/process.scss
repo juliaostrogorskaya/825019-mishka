@@ -9,6 +9,15 @@
   margin-bottom: 58px;
 
   border: $border;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .process__header {
@@ -32,11 +41,18 @@
   position: relative;
 }
 
+.production-process__image {
+  margin: 0 auto;
+  display: block;
+  height: 150px;
+}
+
 .production-process__play-button {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 10;
+  padding: 0;
 
   width: 101px;
   height: 77px;
@@ -46,11 +62,22 @@
   background-repeat: no-repeat;
   border: none;
   transform: translate(-50%, -50%);
-  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: all 0.4s ease;
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .process__footer {
-  padding-top: 19px;
+  padding-top: 28px;
   padding-right: 34px;
   padding-bottom: 32px;
   padding-left: 34px;
@@ -59,6 +86,7 @@
 .process__text {
   margin: 0;
   margin-bottom: 29px;
+  width: 92%;
 
   color: $secondary-color;
 
@@ -86,12 +114,14 @@
   .process__header {
     order: 1;
     width: 55%;
+    padding-top: 37px;
   }
 
   .process__title {
     padding-left: 69px;
 
     font-size: 20px;
+    background-position: 6px;
   }
 
   .production-process__image {
@@ -110,7 +140,8 @@
   }
 
   .process__text {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
+    width: 100%;
 
     @include font-set(15px,$line-height);
   }
@@ -136,9 +167,11 @@
   }
 
   .process__title {
-    width: 90%;
-    margin-top: 21px;
-    margin-left: 0;
+    width: 70%;
+    padding: 0;
+    padding-top: 48px;
+    margin-left: 54px;
+    background-position: top left;
   }
 
   .production-process__player {

@@ -10,7 +10,7 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 26px;
+  padding-bottom: 26px;
 
   color: $black;
 
@@ -33,8 +33,20 @@
 .contacts__link {
   color: $secondary-color;
   text-decoration: none;
+  border-bottom: 1px solid $primary-color;
 
   @include font-set(15px,$line-height);
+
+  &:hover,
+  &:focus {
+    color: $primary-color-darker;
+    border-bottom: 1px solid $primary-color-darker;
+  }
+
+  &:active {
+    color: rgba($primary-color-darker, 0.3);
+    border-bottom: 1px solid rgba($primary-color-darker, 0.1);
+  }
 }
 
 .contacts__address {
@@ -68,15 +80,20 @@
   .contacts__wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 35px;
+    padding-top: 10px;
     padding-bottom: 28px;
   }
 
   .contacts__title {
     width: 100%;
-    margin-bottom: 21px;
+    padding-bottom: 21px;
+    padding-top: 24px;
 
     @include font-set(43px,50px,bold);
+
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-position: right;
   }
 
   .contacts__text {

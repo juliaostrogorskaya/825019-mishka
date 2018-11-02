@@ -1,5 +1,4 @@
 .modal {
-  display: none;
   width: 320px;
   height: 336px;
   margin: 0 auto;
@@ -7,9 +6,22 @@
   padding-right: 30px;
   padding-bottom: 46px;
   padding-left: 30px;
+  background-color: $white;
+  z-index: 70;
+  bottom: -17px;
+  left: 0;
 
   border: $border;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.modal--closed {
+  display: none;
+}
+
+.modal--opened {
+  display: block;
+  position: absolute;
 }
 
 .modal__title {
@@ -58,6 +70,11 @@
 
 .chooze-size__radio:checked + label {
   border: 2px solid $primary-color-form;
+}
+
+.chooze-size__radio + label:hover,
+.chooze-size__radio + label:focus {
+  border: 2px solid rgba($secondary-color, 0.3);
 }
 
 .chooze-size__button {

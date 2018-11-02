@@ -43,13 +43,28 @@
     margin: 0 auto;
     margin-top: -68px;
     padding: 0 50px;
-    max-width: 768px;
 
     border-top: $border;
+    position: relative;
+
+    &::after {
+      bottom: -14px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+      content: "";
+      position: absolute;
+      background-repeat: repeat;
+    }
   }
 
   .page-header__intro--image {
     height: 627px;
+    margin: 0 auto;
+    padding: 0 50px;
+    margin-top: -68px;
   }
 
   .page-header__intro-text {
@@ -84,7 +99,12 @@
 @media (min-width: $desktop-width) {
   .page-header__intro {
     padding: 0 100px;
-    min-width: 1150px;
+    max-width: 1150px;
+  }
+
+  .page-header__intro--image {
+    padding: 0 100px;
+    max-width: 1150px;
   }
 
   .page-header__title,
