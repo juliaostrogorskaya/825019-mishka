@@ -27,7 +27,8 @@
 }
 
 .catalog-item__image {
-  width: 100%;
+  width: 260px;
+  height: 195px;
 }
 
 .catalog-item__description {
@@ -124,6 +125,11 @@
     height: 332px;
   }
 
+  .catalog-item__image {
+    width: 334px;
+    height: 334px;
+  }
+
   .catalog-item__description {
     display: flex;
     flex-direction: column;
@@ -182,6 +188,7 @@
 
   .catalog-item__image {
     display: block;
+    width: 316px;
     height: 462px;
   }
 

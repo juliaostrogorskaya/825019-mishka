@@ -130,6 +130,11 @@
   }
 }
 
+.site-list__logo {
+  width: 86px;
+  height: 35px;
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
@@ -213,7 +218,7 @@
         padding-top: 32px;
         padding-right: 0;
         padding-bottom: 33px;
-        padding-left: 83px;
+        padding-left: 82px;
       }
     }
 
@@ -244,6 +249,11 @@
 
   .site-list__link {
     padding-top: 20px;
+  }
+
+  .site-list__logo {
+    width: 112px;
+    height: 46px;
   }
 }
 
@@ -286,6 +296,7 @@
 
       a {
         text-align: center;
+        padding-top: 9px;
       }
     }
 
@@ -334,5 +345,10 @@
   .site-list__link {
     padding-top: 32px;
     padding-bottom: 29px;
+  }
+
+  .site-list__logo {
+    width: 149px;
+    height: 72px;
   }
 }
