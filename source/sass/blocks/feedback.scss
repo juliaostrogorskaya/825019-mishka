@@ -64,12 +64,10 @@
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 350px 427px;
+    background-size: 350px 457px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
-      background-repeat: no-repeat;
-      background-size: 350px 427px;
     }
   }
 

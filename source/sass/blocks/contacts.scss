@@ -23,7 +23,7 @@
 }
 
 .contacts__text {
-  padding-right: 32px;
+  padding-right: 30px;
 
   color: $secondary-color;
 
@@ -108,7 +108,7 @@
 
   .contacts__text {
     width: auto;
-    padding-right: 27px;
+    padding-right: 25px;
 
     @include font-set($font-size,$line-height);
   }

@@ -1,5 +1,6 @@
 .page-header__top {
   position: relative;
+  box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 }
 
 .page-header__intro {
@@ -33,7 +34,7 @@
 .page-header__title {
   width: 80%;
   margin: 0 auto;
-  padding-top: 73px;
+  padding-top: 72px;
   padding-bottom: 75px;
 
   text-align: center;
@@ -43,6 +44,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__top {
+    box-shadow: none;
+  }
+
   .page-header__intro {
     margin-top: -68px;
 
@@ -63,9 +68,11 @@
 
   .page-header__intro-text {
     display: block;
-    padding-top: 18px;
 
     text-align: right;
+    margin: 0 auto;
+    padding: 0 50px;
+    padding-top: 17px;
   }
 
   .page-header__title {
@@ -106,9 +113,6 @@
 
   .page-header__intro-text {
     font-size: 15px;
-    margin: 0 auto;
     max-width: 1150px;
-    padding: 0 50px;
-    padding-top: 17px;
   }
 }

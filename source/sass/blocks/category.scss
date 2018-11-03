@@ -118,16 +118,21 @@
   .category__item {
     width: 50%;
     min-height: 119px;
+
+    &--interior a::after {
+      top: 30px;
+    }
+
+    &--toys a::after {
+      top: 31px;
+      right: 34px;
+    }
   }
 
   .category__link {
     padding-left: 36px;
 
     @include font-set(20px,$line-height,bold);
-  }
-
-  .category__text {
-    width: 40%;
   }
 }
 

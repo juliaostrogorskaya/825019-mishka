@@ -12,7 +12,7 @@
 }
 
 .catalog-item {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 
   border: $border;
 
@@ -34,7 +34,7 @@
 .catalog-item__description {
   padding-top: 18px;
   padding-right: 28px;
-  padding-bottom: 21px;
+  padding-bottom: 24px;
   padding-left: 28px;
 }
 
@@ -58,8 +58,7 @@
 
 .catalog-item__title {
   margin: 0;
-  margin-bottom: 6px;
-  padding-right: 10px;
+  margin-bottom: 7px;
 
   @include font-set($font-size,24px,bold);
 }
@@ -76,7 +75,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 21px;
+  padding-top: 18px;
 
   border-top: $border;
 }
@@ -144,6 +143,7 @@
 
   .catalog-item__title {
     @include font-set(20px,24px);
+    width: 85%;
   }
 
   .catalog-item__text {
