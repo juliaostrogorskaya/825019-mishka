@@ -1,6 +1,6 @@
 .modal {
   width: 320px;
-  padding-top: 34px;
+  padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 46px;
   padding-left: 30px;
@@ -32,8 +32,8 @@
 
 .modal__text {
   margin: 0;
-  margin-top: 10px;
-  margin-bottom: 19px;
+  margin-top: 12px;
+  margin-bottom: 22px;
 
   text-align: center;
   color: $secondary-color;
@@ -103,7 +103,7 @@
 @media (min-width: $tablet-width) {
   .modal {
     width: 566px;
-    padding-top: 45px;
+    padding-top: 34px;
     padding-right: 105px;
     padding-left: 105px;
   }
@@ -120,6 +120,9 @@
 
   .modal__text {
     @include font-set($font-size,$line-height);
+
+    margin-top: 14px;
+    margin-bottom: 20px;
   }
 
   .chooze-size__button {

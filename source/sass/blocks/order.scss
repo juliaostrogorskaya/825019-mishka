@@ -30,6 +30,11 @@
 
   @include font-set($font-size,16px,bold);
 
+  &--tel,
+  &--mail {
+    padding-bottom: 6px;
+  }
+
   &::after {
     content: "";
 
@@ -68,12 +73,11 @@
   @include before;
 }
 
-.radio-group__input + label:hover::before,
-.radio-group__input + label:focus::before {
+.radio-group__input:checked + label::before {
   border: 2px solid $primary-color-form;
 }
 
-.radio-group__input + label:active::before {
+.radio-group__input:active + label::before {
   border: 2px solid rgba($secondary-color, 0.3);
 }
 
@@ -134,12 +138,11 @@
   @include after;
 }
 
-.checkbox-group__input + label:hover::before,
-.checkbox-group__input + label:focus::before {
+.checkbox-group__input:checked + label::before {
   border: 2px solid $primary-color-form;
 }
 
-.checkbox-group__input + label:active::before {
+.checkbox-group__input:active + label::before {
   border: 2px solid rgba($secondary-color, 0.3);
 }
 
@@ -161,14 +164,13 @@
 
 .field-group__label {
   display: block;
-  padding-bottom: 10px;
 
   @include font-set($font-size,18px,bold);
 }
 
 .field-group__input {
   width: 100%;
-  padding-bottom: 14px;
+  height: 52px;
 
   border: none;
   border-bottom: 2px solid $black;
@@ -192,7 +194,7 @@
 }
 
 .field-group-contacts {
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   position: relative;
 }
 
@@ -200,7 +202,7 @@
 .field-group__icon-mail {
   opacity: 0.2;
   position: absolute;
-  top: 0;
+  top: 12px;
 }
 
 .field-group__icon-phone {
@@ -212,7 +214,7 @@
 }
 
 .field-group-text {
-  padding-top: 9px;
+  padding-top: 7px;
 }
 
 .field-group__textarea {
@@ -283,6 +285,11 @@
     width: 166px;
     padding-top: 7px;
 
+    &--tel,
+    &--mail {
+      padding-top: 19px;
+    }
+
     &::after {
       display: none;
     }
@@ -301,15 +308,19 @@
       background-color: $grey-light;
     }
 
+    &:nth-of-type(3) {
+      padding-bottom: 17px;
+    }
+
     &:nth-of-type(4) {
-      padding-top: 61px;
+      padding-top: 49px;
 
       background-color: $grey-light;
     }
 
     &:nth-of-type(5) {
       margin-bottom: 62px;
-      padding-bottom: 14px;
+      padding-bottom: 27px;
 
       background-color: $grey-light;
     }
@@ -326,7 +337,7 @@
 
   .radio-group {
     padding-top: 4px;
-    padding-bottom: 9px;
+    padding-bottom: 11px;
   }
 
   .radio-group__wrapper {
@@ -391,18 +402,19 @@
 
 
   .field-group {
-    padding-bottom: 3px;
+    padding: 0;
   }
 
   .field-group__wrapper {
     display: flex;
     margin-top: -10px;
-    padding-bottom: 45px;
+    padding-bottom: 34px;
+    align-items: center;
   }
 
   .field-group-contacts {
     width: 501px;
-    padding-bottom: 36px;
+    padding-bottom: 24px;
 
     input {
       width: 100%;
@@ -410,8 +422,7 @@
   }
 
   .field-group__label {
-    padding-right: 29px;
-    padding-top: 3px;
+    padding-right: 27px;
 
     @include font-set(19px,18px);
   }
@@ -420,6 +431,7 @@
     flex-grow: 1;
     width: 375px;
     padding-bottom: 12px;
+    padding-top: 12px;
     padding-left: 15px;
     font-size: 19px;
 
@@ -508,7 +520,7 @@
 
   .field-group {
     margin-top: 0;
-    padding-top: 12px;
+    padding-top: 0;
   }
 
   .field-group__icon-phone {
