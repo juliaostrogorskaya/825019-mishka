@@ -130,8 +130,8 @@
   }
 
   .category__link {
-    padding-left: 36px;
     padding-top: 27px;
+    padding-left: 36px;
 
     @include font-set(20px,$line-height,bold);
   }

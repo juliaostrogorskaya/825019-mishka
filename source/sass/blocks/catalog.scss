@@ -5,10 +5,10 @@
 
 .catalog__list {
   width: 100%;
-
-  @include reset-list;
   margin: 0 auto;
   padding: 0 30px;
+
+  @include reset-list;
 }
 
 .catalog-item {
@@ -43,8 +43,8 @@
 }
 
 .catalog-item__title-link {
-  text-decoration: none;
   color: $black;
+  text-decoration: none;
 
   .catalog-item__title:hover,
   .catalog-item__title:focus {
@@ -92,13 +92,15 @@
   path {
     &:hover,
     &:focus {
-      fill: $primary-color;
       opacity: none;
+
+      fill: $primary-color;
     }
 
     &:active {
-      fill: $primary-color;
       opacity: 0.3;
+
+      fill: $primary-color;
     }
   }
 }
@@ -142,8 +144,9 @@
   }
 
   .catalog-item__title {
-    @include font-set(20px,24px);
     margin-bottom: 6px;
+
+    @include font-set(20px,24px);
   }
 
   .catalog-item__text {

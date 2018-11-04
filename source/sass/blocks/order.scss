@@ -15,9 +15,10 @@
 }
 
 .order-form__group {
-  border: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  border: none;
 }
 
 .order-form__title {
@@ -183,26 +184,29 @@
   }
 
   &:hover + .field-group__icon-phone,
-  &:focus + .field-group__icon-phone,
-  &:active + .field-group__icon-phone,
   &:hover + .field-group__icon-mail,
+  &:focus + .field-group__icon-phone,
   &:focus + .field-group__icon-mail,
+  &:active + .field-group__icon-phone,
   &:active + .field-group__icon-mail, {
     opacity: 1;
+
     fill: $primary-color-form;
   }
 }
 
 .field-group-contacts {
-  padding-bottom: 33px;
   position: relative;
+
+  padding-bottom: 33px;
 }
 
 .field-group__icon-phone,
 .field-group__icon-mail {
-  opacity: 0.2;
   position: absolute;
   top: 12px;
+
+  opacity: 0.2;
 }
 
 .field-group__icon-phone {
@@ -225,6 +229,7 @@
   padding-right: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
+
   line-height: 18px;
 
   border: 2px solid $black;
@@ -390,8 +395,8 @@
   .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
     justify-content: space-between;
+    padding: 0;
   }
 
   .checkbox-group__wrapper {
@@ -407,9 +412,9 @@
 
   .field-group__wrapper {
     display: flex;
+    align-items: center;
     margin-top: -10px;
     padding-bottom: 34px;
-    align-items: center;
   }
 
   .field-group-contacts {
@@ -430,9 +435,10 @@
   .field-group__input {
     flex-grow: 1;
     width: 375px;
-    padding-bottom: 12px;
     padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 15px;
+
     font-size: 19px;
 
     background-color: transparent;
@@ -501,8 +507,8 @@
   }
 
   .order-form__title {
-    padding-left: 10px;
     width: 126px;
+    padding-left: 10px;
   }
 
   .radio-group {
@@ -532,9 +538,9 @@
   }
 
   .order-form__footer {
+    max-width: 1150px;
     padding-right: 225px;
     padding-left: 225px;
-    max-width: 1150px;
   }
 
   .field-group__textarea {

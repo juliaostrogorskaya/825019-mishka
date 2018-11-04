@@ -77,9 +77,10 @@
 }
 
 .weekly-good__button {
+  position: relative;
+
   display: block;
   margin: 0 auto;
-  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -171,8 +172,8 @@
 
   .weekly-good__header {
     flex-direction: row-reverse;
-    padding-left: 45px;
     justify-content: flex-end;
+    padding-left: 45px;
   }
 
   .weekly-good__title {

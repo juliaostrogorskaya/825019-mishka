@@ -104,18 +104,18 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 0 50px;
     padding-top: 30px;
     padding-bottom: 64px;
-    max-width: 1150px;
-    margin: 0 auto;
   }
 
   .feedback__wrapper {
+    padding-top: 70px;
     padding-right: 0;
     padding-bottom: 94px;
     padding-left: 175px;
-    padding-top: 70px;
   }
 
   .feedback__title {
