@@ -466,12 +466,22 @@
 
 @media (min-width: $desktop-width) {
   .order__text {
-    width: 74%;
+    width: 75%;
     margin: 0 auto;
     margin-bottom: 70px;
     padding-top: 126px;
     padding-right: 100px;
     padding-left: 100px;
+  }
+
+  .order-form__wrapper {
+    padding: 0 100px;
+  }
+
+  .order-form__group {
+    &:last-of-type {
+      margin-bottom: 31px;
+    }
   }
 
   .order-form__options {
@@ -492,12 +502,13 @@
   }
 
   .checkbox-group__wrapper {
-    width: 33%;
+    width: 265px;
     padding-right: 40px;
   }
 
   .field-group {
     margin-top: 0;
+    padding-top: 12px;
   }
 
   .field-group__icon-phone {
@@ -516,5 +527,6 @@
 
   .field-group__textarea {
     width: 700px;
+    padding-top: 12px;
   }
 }

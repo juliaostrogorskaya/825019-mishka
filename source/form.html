@@ -15,7 +15,13 @@
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--logo">
-                <a class="site-list__link" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин милых вещиц для дома"></a>
+                <a class="site-list__link" href="index.html">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img class="site-list__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин милых вещиц для дома">
+                  </picture>
+                </a>
               </li>
               <li class="site-list__item site-list__item--catalog">
                 <a class="site-list__link" href="catalog.html">Каталог товаров</a>

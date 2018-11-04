@@ -157,17 +157,17 @@
   .contacts__wrapper {
     display: block;
     padding-top: 100px;
-    padding-bottom: 51px;
+    padding-bottom: 47px;
     padding-left: 225px;
   }
 
   .contacts__address {
-    width: 66%;
+    width: 60%;
   }
 
   .contacts__map {
     position: absolute;
-    top: 97px;
+    top: 98px;
     right: 50px;
 
     width: 525px;
@@ -182,10 +182,12 @@
   }
 
   .contacts__button {
-    margin-left: 276px;
+    margin-left: 250px;
   }
 
   .contacts__title {
     @include font-set(53px,57px);
+
+    padding-top: 22px;
   }
 }
