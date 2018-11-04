@@ -59,7 +59,7 @@
 .category__link {
   display: inline-block;
   width: 100%;
-  padding-top: 27px;
+  padding-top: 25px;
   padding-right: 27px;
   padding-bottom: 30px;
   padding-left: 29px;
@@ -131,6 +131,7 @@
 
   .category__link {
     padding-left: 36px;
+    padding-top: 27px;
 
     @include font-set(20px,$line-height,bold);
   }

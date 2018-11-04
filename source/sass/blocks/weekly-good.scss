@@ -36,7 +36,7 @@
 
 .weekly-good__description {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 
 .weekly-good__table {
@@ -44,7 +44,7 @@
 }
 
 .weekly-good__row {
-  height: 39px;
+  height: 40px;
 
   border-bottom: $border;
 }
@@ -58,7 +58,7 @@
 }
 
 .weekly-good__image {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 
   img {
     width: 260px;
@@ -68,7 +68,7 @@
 
 .weekly-good__price {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   text-align: center;
   color: $secondary-color;
@@ -98,7 +98,7 @@
   }
 
   .weekly-good__title {
-    padding-top: 19px;
+    padding-top: 18px;
 
     @include font-set(43px,50px);
   }
@@ -124,8 +124,8 @@
   }
 
   .weekly-good__table {
-    margin-top: 38px;
-    margin-bottom: 58px;
+    margin-top: 34px;
+    margin-bottom: 56px;
 
     @include font-set(15px,20px);
   }
@@ -152,7 +152,7 @@
   }
 
   .weekly-good__price {
-    margin-bottom: 34px;
+    margin-bottom: 33px;
 
     @include font-set(20px,24px);
   }
