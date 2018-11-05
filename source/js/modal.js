@@ -3,19 +3,25 @@ var modalForm = document.querySelector(".modal");
 var modalAddToCard = document.querySelectorAll(".catalog-item__buy");
 var overlay = document.querySelector(".overlay");
 
-modalButton.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalForm.classList.add("modal--opened");
-  overlay.classList.add("overlay--opened");
+if (modalButton) {
+  modalButton.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modalForm.classList.add("modal--opened");
+    overlay.classList.add("overlay--opened");
     });
+  }
 
-modalAddToCard.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalForm.classList.add("modal--opened");
-  overlay.classList.add("overlay--opened");
+if (modalAddToCard) {
+  for (var i = 0; i<modalAddToCard.length; i++) {
+    modalAddToCard[i].addEventListener("click", function(evt) {
+      evt.preventDefault();
+      modalForm.classList.add("modal--opened");
+      overlay.classList.add("overlay--opened");
     });
+  }
+  }
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (modalForm.classList.contains("modal-opened")) {

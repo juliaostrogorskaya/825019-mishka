@@ -72,7 +72,7 @@
   @include font-set(19px,24px,bold);
 
   &:hover {
-    padding-bottom: 35px;
+    transform: translateY(-5px);
   }
 
   &:hover::after,
@@ -82,6 +82,7 @@
 
   &:active {
     opacity: 0.3;
+    transform: translateY(-5px);
   }
 }
 
@@ -93,6 +94,7 @@
 @media (min-width: $tablet-width) {
   .category {
     position: relative;
+    background-color: #f9f9f9;
 
     &::after {
       content: "";
@@ -111,8 +113,6 @@
     display: flex;
     margin: 0 auto;
     padding: 0 50px;
-
-    background-color: #f9f9f9;
   }
 
   .category__item {
@@ -138,6 +138,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .category {
+    &::after {
+      height: 34px;
+      background-size: auto 100%;
+      left: 0;
+    }
+  }
+
   .category__list {
     max-width: 1150px;
     padding: 0 50px;

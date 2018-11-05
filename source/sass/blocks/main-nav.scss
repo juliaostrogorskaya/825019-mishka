@@ -98,21 +98,23 @@
     position: absolute;
     top: 35px;
     left: 32px;
+  }
 
-    opacity: 0.2;
+  path {
+    fill: rgba(0, 0, 0, 0.2);
+  }
 
-    &:hover,
-    &:focus {
-      opacity: 1;
+  &:hover path,
+  &:focus path {
+    opacity: 1;
 
-      fill: $primary-color;
-    }
+    fill: $primary-color;
+  }
 
-    &:active {
-      opacity: 0.3;
+  &:active path {
+    opacity: 0.3;
 
-      fill: $primary-color;
-    }
+    fill: $primary-color;
   }
 
   &:hover,
@@ -210,6 +212,7 @@
       a {
         padding: 0;
         padding-top: 36px;
+        padding-bottom: 28px;
 
         font-size: 0;
       }
@@ -230,6 +233,7 @@
 
     &--catalog {
       order: 4;
+      z-index: 1;
 
       border: none;
 
@@ -242,6 +246,7 @@
 
     &--form {
       order: 5;
+      z-index: 2;
 
       border: none;
 
@@ -309,10 +314,6 @@
 
     &--search {
       order: 4;
-
-      a {
-        padding: 0;
-      }
     }
 
     &--cart {
@@ -322,6 +323,7 @@
     &--new {
       display: block;
       order: 6;
+      z-index: 3;
 
       border: none;
 
@@ -337,12 +339,13 @@
     &--sale {
       display: block;
       order: 7;
+      z-index: 4;
 
       border: none;
 
       a {
         padding-top: 19px;
-        padding-left: 36px;
+        padding-left: 38px;
 
         font-size: 15px;
       }
