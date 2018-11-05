@@ -19,7 +19,7 @@
   padding: 0;
 
   background-color: $white;
-  background-image: url("../../img/icon-left-arrow.svg");
+  background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: $border;
@@ -31,7 +31,7 @@
   padding: 0;
 
   background-color: $white;
-  background-image: url("../../img/icon-right-arrow.svg");
+  background-image: url("../img/icon-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: $border;
@@ -45,14 +45,15 @@
   }
 
   .slider__button {
-    border: none;
     width: 88px;
+
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__controls {
-    bottom: 60px;
     right: 0;
+    bottom: 60px;
   }
 }

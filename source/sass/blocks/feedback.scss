@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 26px;
-  padding-bottom: 41px;
+  padding-bottom: 39px;
 }
 
 .feedback__title {
@@ -23,7 +23,6 @@
 .feedback__text {
   margin: 0;
   margin-bottom: 24px;
-  padding-right: 5px;
 
   text-align: left;
   color: $secondary-color;
@@ -65,6 +64,11 @@
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px 457px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .feedback__title {
@@ -76,7 +80,7 @@
   }
 
   .feedback__text {
-    margin-bottom: 61px;
+    margin-bottom: 57px;
     padding-right: 12px;
 
     @include font-set($font-size,$line-height);
@@ -100,17 +104,18 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
     padding-top: 30px;
-    padding-right: 50px;
-    padding-bottom: 68px;
-    padding-left: 100px;
+    padding-bottom: 64px;
   }
 
   .feedback__wrapper {
-    padding-top: 73px;
+    padding-top: 70px;
     padding-right: 0;
     padding-bottom: 94px;
-    padding-left: 172px;
+    padding-left: 175px;
   }
 
   .feedback__title {
@@ -118,11 +123,11 @@
   }
 
   .feedback__text {
-    margin-bottom: 39px;
-    padding-right: 120px;
+    margin-bottom: 38px;
+    padding-right: 100px;
   }
 
   .feedback__button {
-    margin-top: 6px;
+    margin-top: 8px;
   }
 }

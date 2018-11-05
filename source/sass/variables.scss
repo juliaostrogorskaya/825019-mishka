@@ -12,10 +12,13 @@ $border: 1px solid $grey-light;
 $border-button: 2px solid $secondary-color;
 $border-footer: 1px solid $grey-dark;
 
-$font-family: "Open Sans", arial, sans-serif;
+$font-family: "OpenSans", arial, sans-serif;
 $font-size: 17px;
 $line-height: 30px;
 
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width-only: 767px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

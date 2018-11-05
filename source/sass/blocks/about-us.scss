@@ -1,5 +1,5 @@
 .about-us {
-  padding-top: 46px;
+  padding-top: 45px;
 }
 
 .about-us__wrapper {
@@ -21,7 +21,7 @@
   position: relative;
 
   padding-top: 55px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 
   @include font-set(17px,20px,bold);
 
@@ -113,18 +113,20 @@
 @media (min-width: $desktop-width) {
   .about-us__wrapper {
     padding-top: 50px;
-    padding-left: 275px;
   }
 
   .about-us__title {
+    margin-left: 175px;
+
     @include font-set(53px,57px);
   }
 
   .about-us__list {
-    padding-right: 122px;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
   .about-us__item {
-    padding-right: 80px;
+    padding-right: 40px;
   }
 }

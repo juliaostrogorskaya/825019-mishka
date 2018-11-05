@@ -15,7 +15,13 @@
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--logo">
-                <a class="site-list__link" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин милых вещиц для дома"></a>
+                <a class="site-list__link" href="index.html">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img class="site-list__logo" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка - интернет-магазин милых вещиц для дома">
+                  </picture>
+                </a>
               </li>
               <li class="site-list__item site-list__item--catalog">
                 <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -124,7 +130,7 @@
           </fieldset>
           <fieldset class="order-form__group">
             <div class="order-form__wrapper wrapper">
-              <h3 class="order-form__title">тел</h3>
+              <h3 class="order-form__title order-form__title--tel">тел</h3>
               <div class="order-form__options field-group-contacts">
                 <label class="visually-hidden" for="phone-number">Номер телефона</label>
                 <input class="field-group__input" id="phone-number" type="tel" name="phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="\+7 \d{3} \d{3} \d{2} \d{2}">
@@ -143,7 +149,7 @@
           </fieldset>
           <fieldset class="order-form__group">
             <div class="order-form__wrapper wrapper">
-              <h3 class="order-form__title">E-mail</h3>
+              <h3 class="order-form__title order-form__title--mail">E-mail</h3>
               <div class="order-form__options field-group-contacts">
                 <label class="visually-hidden" for="email">Почтовый адрес</label>
                 <input class="field-group__input" id="email" type="email" name="email" placeholder="Ваш Email*">

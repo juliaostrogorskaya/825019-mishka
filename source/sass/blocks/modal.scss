@@ -1,27 +1,24 @@
 .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 70;
+
+  display: none;
   width: 320px;
-  height: 336px;
-  margin: 0 auto;
-  padding-top: 34px;
+  padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 46px;
   padding-left: 30px;
-  background-color: $white;
-  z-index: 70;
-  bottom: -17px;
-  left: 0;
 
+  background-color: $white;
   border: $border;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
-}
-
-.modal--closed {
-  display: none;
+  transform: translate(-50%, -50%);
 }
 
 .modal--opened {
   display: block;
-  position: absolute;
 }
 
 .modal__title {
@@ -36,8 +33,8 @@
 
 .modal__text {
   margin: 0;
-  margin-top: 23px;
-  margin-bottom: 21px;
+  margin-top: 12px;
+  margin-bottom: 22px;
 
   text-align: center;
   color: $secondary-color;
@@ -89,13 +86,29 @@
   border: none;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($white, 0.9);
+}
+
+.overlay--opened {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .modal {
     width: 566px;
-    height: 336px;
-    padding-top: 50px;
-    padding-right: 106px;
-    padding-left: 107px;
+    padding-top: 34px;
+    padding-right: 105px;
+    padding-left: 105px;
   }
 
   .chooze-size__radio + label {
@@ -109,6 +122,9 @@
   }
 
   .modal__text {
+    margin-top: 14px;
+    margin-bottom: 20px;
+
     @include font-set($font-size,$line-height);
   }
 

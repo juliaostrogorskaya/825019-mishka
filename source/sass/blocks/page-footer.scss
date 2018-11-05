@@ -20,13 +20,13 @@
 }
 
 .social__list {
-  @include reset-list;
-
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 25px;
   padding-bottom: 17px;
+
+  @include reset-list;
 }
 
 .social__item {
@@ -80,8 +80,9 @@
   }
 
   &:active {
-    fill: $primary-color-darker;
     opacity: 0.3;
+
+    fill: $primary-color-darker;
   }
 }
 

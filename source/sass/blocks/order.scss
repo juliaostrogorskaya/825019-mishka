@@ -1,12 +1,11 @@
 .order {
   margin: 0 auto;
-  padding-top: 24px;
+  padding-top: 22px;
 }
 
 .order__text {
-  width: 90%;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
   padding-right: 30px;
   padding-left: 30px;
 
@@ -16,9 +15,10 @@
 }
 
 .order-form__group {
-  border: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  border: none;
 }
 
 .order-form__title {
@@ -30,6 +30,11 @@
   text-transform: uppercase;
 
   @include font-set($font-size,16px,bold);
+
+  &--tel,
+  &--mail {
+    padding-bottom: 6px;
+  }
 
   &::after {
     content: "";
@@ -45,15 +50,15 @@
 }
 
 .radio-group {
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 16px;
+  padding-bottom: 20px;
 }
 
 .radio-group__wrapper {
   position: relative;
 
   width: 100%;
-  padding-bottom: 27px;
+  padding-bottom: 24px;
 }
 
 .radio-group__input + label::before {
@@ -69,12 +74,11 @@
   @include before;
 }
 
-.radio-group__input + label:hover::before,
-.radio-group__input + label:focus::before {
+.radio-group__input:checked + label::before {
   border: 2px solid $primary-color-form;
 }
 
-.radio-group__input + label:active::before {
+.radio-group__input:active + label::before {
   border: 2px solid rgba($secondary-color, 0.3);
 }
 
@@ -100,14 +104,14 @@
 
 .checkbox-group {
   padding-top: 13px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 
 .checkbox-group__wrapper {
   position: relative;
 
   padding-top: 5px;
-  padding-bottom: 39px;
+  padding-bottom: 38px;
   padding-left: 63px;
 }
 
@@ -135,12 +139,11 @@
   @include after;
 }
 
-.checkbox-group__input + label:hover::before,
-.checkbox-group__input + label:focus::before {
+.checkbox-group__input:checked + label::before {
   border: 2px solid $primary-color-form;
 }
 
-.checkbox-group__input + label:active::before {
+.checkbox-group__input:active + label::before {
   border: 2px solid rgba($secondary-color, 0.3);
 }
 
@@ -152,7 +155,7 @@
 
 .field-group {
   padding-top: 14px;
-  padding-bottom: 9px;
+  padding-bottom: 6px;
 }
 
 .field-group__wrapper {
@@ -162,14 +165,13 @@
 
 .field-group__label {
   display: block;
-  padding-bottom: 11px;
 
   @include font-set($font-size,18px,bold);
 }
 
 .field-group__input {
   width: 100%;
-  padding-bottom: 14px;
+  height: 52px;
 
   border: none;
   border-bottom: 2px solid $black;
@@ -182,26 +184,29 @@
   }
 
   &:hover + .field-group__icon-phone,
-  &:focus + .field-group__icon-phone,
-  &:active + .field-group__icon-phone,
   &:hover + .field-group__icon-mail,
+  &:focus + .field-group__icon-phone,
   &:focus + .field-group__icon-mail,
+  &:active + .field-group__icon-phone,
   &:active + .field-group__icon-mail, {
     opacity: 1;
+
     fill: $primary-color-form;
   }
 }
 
 .field-group-contacts {
-  padding-bottom: 33px;
   position: relative;
+
+  padding-bottom: 33px;
 }
 
 .field-group__icon-phone,
 .field-group__icon-mail {
-  opacity: 0.2;
   position: absolute;
-  top: 0;
+  top: 12px;
+
+  opacity: 0.2;
 }
 
 .field-group__icon-phone {
@@ -224,6 +229,7 @@
   padding-right: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
+
   line-height: 18px;
 
   border: 2px solid $black;
@@ -246,7 +252,7 @@
 
 .order-form__required {
   display: block;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 
   color: $secondary-color;
 
@@ -266,8 +272,7 @@
   }
 
   .order__text {
-    width: 89%;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
     padding-top: 76px;
     padding-right: 50px;
     padding-left: 50px;
@@ -284,6 +289,11 @@
     display: block;
     width: 166px;
     padding-top: 7px;
+
+    &--tel,
+    &--mail {
+      padding-top: 19px;
+    }
 
     &::after {
       display: none;
@@ -303,15 +313,19 @@
       background-color: $grey-light;
     }
 
+    &:nth-of-type(3) {
+      padding-bottom: 17px;
+    }
+
     &:nth-of-type(4) {
-      padding-top: 64px;
+      padding-top: 49px;
 
       background-color: $grey-light;
     }
 
     &:nth-of-type(5) {
       margin-bottom: 62px;
-      padding-bottom: 18px;
+      padding-bottom: 27px;
 
       background-color: $grey-light;
     }
@@ -328,11 +342,11 @@
 
   .radio-group {
     padding-top: 4px;
-    padding-bottom: 9px;
+    padding-bottom: 11px;
   }
 
   .radio-group__wrapper {
-    padding-bottom: 60px;
+    padding-bottom: 58px;
   }
 
   .radio-group__label {
@@ -381,28 +395,31 @@
   .checkbox-group {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
   }
 
   .checkbox-group__wrapper {
-    width: 50%;
+    width: 238px;
     margin-bottom: 14px;
     padding-left: 0;
   }
 
 
   .field-group {
-    padding-bottom: 0;
+    padding: 0;
   }
 
   .field-group__wrapper {
     display: flex;
+    align-items: center;
     margin-top: -10px;
-    padding-bottom: 49px;
+    padding-bottom: 34px;
   }
 
   .field-group-contacts {
     width: 501px;
+    padding-bottom: 24px;
 
     input {
       width: 100%;
@@ -410,8 +427,7 @@
   }
 
   .field-group__label {
-    padding-right: 29px;
-    padding-top: 3px;
+    padding-right: 27px;
 
     @include font-set(19px,18px);
   }
@@ -419,8 +435,10 @@
   .field-group__input {
     flex-grow: 1;
     width: 375px;
-    padding-bottom: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 15px;
+
     font-size: 19px;
 
     background-color: transparent;
@@ -466,7 +484,7 @@
 
 @media (min-width: $desktop-width) {
   .order__text {
-    width: 74%;
+    width: 75%;
     margin: 0 auto;
     margin-bottom: 70px;
     padding-top: 126px;
@@ -474,13 +492,23 @@
     padding-left: 100px;
   }
 
+  .order-form__wrapper {
+    padding: 0 100px;
+  }
+
+  .order-form__group {
+    &:last-of-type {
+      margin-bottom: 31px;
+    }
+  }
+
   .order-form__options {
     width: 700px;
   }
 
   .order-form__title {
-    padding-left: 10px;
     width: 126px;
+    padding-left: 10px;
   }
 
   .radio-group {
@@ -492,12 +520,13 @@
   }
 
   .checkbox-group__wrapper {
-    width: 33%;
+    width: 265px;
     padding-right: 40px;
   }
 
   .field-group {
     margin-top: 0;
+    padding-top: 0;
   }
 
   .field-group__icon-phone {
@@ -509,12 +538,13 @@
   }
 
   .order-form__footer {
+    max-width: 1150px;
     padding-right: 225px;
     padding-left: 225px;
-    max-width: 1150px;
   }
 
   .field-group__textarea {
     width: 700px;
+    padding-top: 12px;
   }
 }
