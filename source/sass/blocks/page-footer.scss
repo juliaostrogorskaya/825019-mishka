@@ -56,7 +56,18 @@
   padding-top: 10px;
   padding-bottom: 12px;
 
-  &:active {
+  &:hover .copyright__image,
+  &:focus .copyright__image {
+    fill: $primary-color-darker;
+  }
+
+  &:active .copyright__image {
+    opacity: 0.3;
+
+    fill: $primary-color-darker;
+  }
+
+  &:active .copyright__text {
     color: rgba($black, 0.3);
   }
 }
@@ -74,17 +85,6 @@
 
 .copyright__image {
   margin-top: 3px;
-
-  &:hover,
-  &:focus {
-    fill: $primary-color-darker;
-  }
-
-  &:active {
-    opacity: 0.3;
-
-    fill: $primary-color-darker;
-  }
 }
 
 @media (min-width: $tablet-width) {

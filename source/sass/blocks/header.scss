@@ -50,10 +50,11 @@
   }
 
   .page-header__intro {
+    position: relative;
+
     margin-top: -68px;
 
     border-top: $border;
-    position: relative;
 
     &::after {
       content: "";
@@ -82,6 +83,10 @@
 
     h1 {
       padding-top: 112px;
+    }
+
+    &::after {
+      display: none;
     }
   }
 
@@ -114,9 +119,11 @@
     margin-top: -72px;
 
     &::after {
-      height: 34px;
-      background-size: auto 100%;
       left: 0;
+
+      height: 34px;
+
+      background-size: auto 100%;
     }
   }
 
@@ -134,8 +141,8 @@
   }
 
   .page-header__title {
-    padding-bottom: 109px;
     padding-top: 52px;
+    padding-bottom: 109px;
 
     @include font-set(53px,57px);
   }

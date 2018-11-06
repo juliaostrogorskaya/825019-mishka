@@ -24,18 +24,21 @@ if (modalAddToCard) {
 window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (modalForm.classList.contains("modal-opened")) {
-        modalForm.classList.remove("modal-opened");
+      if (modalForm.classList.contains("modal--opened")) {
+        modalForm.classList.remove("modal--opened");
       }
-      if (overlay.classList.contains("overlay-opened")) {
-        overlay.classList.remove("overlay-opened");
+      if (overlay.classList.contains("overlay--opened")) {
+        overlay.classList.remove("overlay--opened");
       }
     }
   });
 
   overlay.addEventListener("click", function(evt) {
     evt.preventDefault();
-      if (overlay.classList.contains("overlay-opened")) {
-        modalForm.classList.remove("overlay-opened");
-      }
+    if (modalForm.classList.contains("modal--opened")) {
+      modalForm.classList.remove("modal--opened");
+    }
+    if (overlay.classList.contains("overlay--opened")) {
+      overlay.classList.remove("overlay--opened");
+    }
   });

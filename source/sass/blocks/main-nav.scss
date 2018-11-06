@@ -232,8 +232,9 @@
     }
 
     &--catalog {
-      order: 4;
       z-index: 1;
+
+      order: 4;
 
       border: none;
 
@@ -245,8 +246,9 @@
     }
 
     &--form {
-      order: 5;
       z-index: 2;
+
+      order: 5;
 
       border: none;
 
@@ -321,9 +323,10 @@
     }
 
     &--new {
+      z-index: 3;
+
       display: block;
       order: 6;
-      z-index: 3;
 
       border: none;
 
@@ -337,9 +340,10 @@
     }
 
     &--sale {
+      z-index: 4;
+
       display: block;
       order: 7;
-      z-index: 4;
 
       border: none;
 
