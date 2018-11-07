@@ -132,7 +132,6 @@
   }
 
   .contacts__map {
-    width: 768px;
     height: 457px;
     margin-bottom: 55px;
 
@@ -190,8 +189,24 @@
   }
 
   .contacts__title {
+    position: relative;
+
     padding-top: 22px;
 
+    background-image: none;
+
     @include font-set(53px,57px);
+
+    &::before {
+      bottom: 5px;
+      left: -112px;
+
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../img/icon-flag.svg");
+
+      @include before;
+    }
   }
 }
