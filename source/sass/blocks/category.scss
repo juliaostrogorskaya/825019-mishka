@@ -32,8 +32,6 @@
   &--toys {
     position: relative;
 
-    padding-right: 27px;
-
     background-color: $primary-color-dark;
 
     &:hover,
@@ -59,7 +57,7 @@
 }
 
 .category__link {
-  display: inline-block;
+  display: block;
   width: 100%;
   padding-top: 25px;
   padding-right: 27px;

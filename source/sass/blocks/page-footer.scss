@@ -5,12 +5,12 @@
 .page-footer__logo {
   display: none;
 
-  svg:hover,
-  svg:focus {
+  &:hover svg,
+  &:focus svg {
     fill: $primary-color-darker;
   }
 
-  svg:active {
+  &:active svg {
     fill: rgba($primary-color-darker, 0.3);
   }
 }
@@ -38,15 +38,13 @@
   }
 }
 
-.social__link {
-  path:hover,
-  path:focus {
-    fill: $primary-color-darker;
-  }
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: $primary-color-darker;
+}
 
-  path:active {
-    fill: rgba($primary-color-darker, 0.3);
-  }
+.social__link:active svg {
+  fill: rgba($primary-color-darker, 0.3);
 }
 
 .page-footer__copyright {

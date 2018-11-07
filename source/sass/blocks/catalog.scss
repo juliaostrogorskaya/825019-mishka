@@ -25,12 +25,12 @@
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     fill: $primary-color;
   }
 
-  &:active path {
+  &:active svg {
     opacity: 0.3;
 
     fill: $primary-color;
@@ -98,7 +98,7 @@
 }
 
 .catalog-item__buy {
-  path {
+  svg {
     fill: rgba(0, 0, 0, 0.2);
   }
 }

@@ -193,9 +193,9 @@
   }
 
 
-  &:hover + .field-group__icon,
-  &:focus + .field-group__icon,
-  &:active + .field-group__icon {
+  &:hover + svg,
+  &:focus + svg,
+  &:active + svg {
     opacity: 1;
 
     fill: $primary-color-form;
