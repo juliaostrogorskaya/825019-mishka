@@ -54,12 +54,12 @@
   padding-top: 10px;
   padding-bottom: 12px;
 
-  &:hover .copyright__image,
-  &:focus .copyright__image {
+  &:hover svg,
+  &:focus svg {
     fill: $primary-color-darker;
   }
 
-  &:active .copyright__image {
+  &:active svg {
     opacity: 0.3;
 
     fill: $primary-color-darker;
@@ -81,7 +81,7 @@
   margin-left: 28px;
 }
 
-.copyright__image {
+.icon--htmlacademy {
   margin-top: 3px;
 }
 

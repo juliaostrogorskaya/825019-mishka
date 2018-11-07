@@ -208,18 +208,18 @@
   padding-bottom: 33px;
 }
 
-.field-group__icon {
+.field-group-contacts svg {
   position: absolute;
   top: 12px;
 
   opacity: 0.2;
 }
 
-.field-group__icon--phone {
+.icon--icon-phone {
   right: 8px;
 }
 
-.field-group__icon--mail {
+.icon--icon-mail {
   right: 4px;
 }
 
@@ -450,11 +450,11 @@
     background-color: transparent;
   }
 
-  .field-group__icon--phone {
+  .icon--icon-phone {
     right: 26px;
   }
 
-  .field-group__icon--mail {
+  .icon--icon-mail {
     right: 22px;
   }
 
@@ -543,11 +543,11 @@
     padding-top: 0;
   }
 
-  .field-group__icon--phone {
+  .icon--icon-phone {
     right: 8px;
   }
 
-  .field-group__icon--mail {
+  .icon--icon-mail {
     right: 4px;
   }
 
