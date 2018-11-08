@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
     <script> document.documentElement.removeAttribute("class"); </script>
     <script src="js/picturefill.js"></script>
   </head>
 
   <body>
-    <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
     <header class="page-header">
       <div class="page-header__top">
         <nav class="main-nav main-nav--closed">
@@ -108,7 +107,7 @@
           </div>
           <footer class="weekly-good__footer">
             <p class="weekly-good__price">Цена: 990 руб.</p>
-            <a class="weekly-good__button button" href="#">Заказать</a>
+            <a class="weekly-good__button button" href="add-cart.html">Заказать</a>
             <div class="overlay"></div>
             <section class="modal modal--add-cart">
               <h2 class="modal__title">Добавить в корзину</h2>
@@ -225,7 +224,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/menu.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/menu.min.js"></script>
+    <script src="js/modal.min.js"></script>
+    <script src ="js/svg4everybody.min.js"></script> <script>svg4everybody();</script>
   </body>
 </html>
