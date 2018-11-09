@@ -46,9 +46,11 @@ gulp.task("css", function () {
 });
 
 gulp.task("jscompress", function () {
-    return gulp.src("build/js/*.js")
+    return gulp.src("source/js/*.js")
         .pipe(uglify())
-        .pipe(rename("*.min.js"))
+        .pipe(rename({
+          suffix:".min"
+        }))
         .pipe(gulp.dest("build/js"))
     });
 
