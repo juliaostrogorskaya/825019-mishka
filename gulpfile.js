@@ -45,12 +45,12 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-/*gulp.task("jscompress", function () {
-        gulp.src("build/js/*.js")
+gulp.task("jscompress", function () {
+    return gulp.src("build/js/*.js")
         .pipe(uglify())
         .pipe(rename("*.min.js"))
         .pipe(gulp.dest("build/js"))
-    });*/
+    });
 
 gulp.task("sprite", function() {
   return gulp.src("source/img/sprite-*.svg")
@@ -103,5 +103,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean","copy","css","images","sprite","html"));
+gulp.task("build", gulp.series("clean","css","jscompress","images","copy","sprite","html"));
 gulp.task("start", gulp.series("build", "server"));

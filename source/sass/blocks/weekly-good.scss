@@ -49,11 +49,11 @@
   border-bottom: $border;
 }
 
-.item-info__label {
+.weekly-good__info-label {
   width: 97px;
 }
 
-.item-info__value {
+.weekly-good__info-value {
   width: 163px;
 }
 
@@ -131,7 +131,7 @@
     @include font-set(15px,20px);
   }
 
-  .item-info__value {
+  .weekly-good__info-value {
     width: 191px;
   }
 
