@@ -98,20 +98,17 @@
     position: absolute;
     top: 35px;
     left: 32px;
-  }
-
-  path {
     fill: rgba(0, 0, 0, 0.2);
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover svg,
+  &:focus svg {
     opacity: 1;
 
     fill: $primary-color;
   }
 
-  &:active path {
+  &:active svg {
     opacity: 0.3;
 
     fill: $primary-color;

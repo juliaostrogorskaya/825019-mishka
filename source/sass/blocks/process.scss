@@ -38,18 +38,18 @@
   @include font-set($font-size,24px,bold);
 }
 
-.production-process__player {
+.process__player {
   position: relative;
 }
 
-.production-process__image {
+.process__image {
   display: block;
   width: 260px;
   height: 150px;
   margin: 0 auto;
 }
 
-.production-process__play-button {
+.process__play-button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -127,14 +127,14 @@
     background-position: 6px;
   }
 
-  .production-process__image {
+  .process__image {
     position: relative;
 
     width: 668px;
     height: 454px;
   }
 
-  .production-process__play-button {
+  .process__play-button {
     width: 102px;
     height: 78px;
   }
@@ -183,18 +183,18 @@
     background-position: top left;
   }
 
-  .production-process__player {
+  .process__player {
     position: absolute;
     top: 0;
     left: 0;
   }
 
-  .production-process__image {
+  .process__image {
     width: 682px;
     height: 453px;
   }
 
-  .production-process__play-button {
+  .process__play-button {
     width: 101px;
     height: 77px;
   }

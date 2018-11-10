@@ -178,7 +178,8 @@
   @include font-set($font-size,18px,bold);
 }
 
-.field-group__input {
+.field-group__input,
+.field-group-contacts__input {
   width: 100%;
   height: 52px;
   padding-top: 0;
@@ -193,9 +194,9 @@
   }
 
 
-  &:hover + .field-group__icon,
-  &:focus + .field-group__icon,
-  &:active + .field-group__icon {
+  &:hover + svg,
+  &:focus + svg,
+  &:active + svg {
     opacity: 1;
 
     fill: $primary-color-form;
@@ -208,18 +209,18 @@
   padding-bottom: 33px;
 }
 
-.field-group__icon {
+.field-group-contacts svg {
   position: absolute;
   top: 12px;
 
   opacity: 0.2;
 }
 
-.field-group__icon--phone {
+.icon--phone {
   right: 8px;
 }
 
-.field-group__icon--mail {
+.icon--mail {
   right: 4px;
 }
 
@@ -227,7 +228,7 @@
   padding-top: 7px;
 }
 
-.field-group__textarea {
+.field-group-text__textarea {
   display: block;
   width: 100%;
   min-height: 142px;
@@ -438,7 +439,8 @@
     @include font-set(19px,18px);
   }
 
-  .field-group__input {
+  .field-group__input,
+  .field-group-contacts__input {
     flex-grow: 1;
     width: 375px;
     padding-top: 12px;
@@ -450,11 +452,11 @@
     background-color: transparent;
   }
 
-  .field-group__icon--phone {
+  .icon--phone {
     right: 26px;
   }
 
-  .field-group__icon--mail {
+  .icon--mail {
     right: 22px;
   }
 
@@ -462,7 +464,7 @@
     margin-top: -19px;
   }
 
-  .field-group__textarea {
+  .field-group-text__textarea {
     font-size: 19px;
   }
 
@@ -543,11 +545,11 @@
     padding-top: 0;
   }
 
-  .field-group__icon--phone {
+  .icon--phone {
     right: 8px;
   }
 
-  .field-group__icon--mail {
+  .icon--mail {
     right: 4px;
   }
 
@@ -557,7 +559,7 @@
     padding-left: 225px;
   }
 
-  .field-group__textarea {
+  .field-group-text__textarea {
     width: 700px;
     padding-top: 12px;
   }
