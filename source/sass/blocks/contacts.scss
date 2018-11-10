@@ -164,6 +164,12 @@
 
       border-bottom: 1px solid $primary-color-darker;
     }
+
+    &:active {
+      color: rgba($primary-color-darker, 0.3);
+
+      border-bottom: 1px solid rgba($primary-color-darker, 0.1);
+    }
   }
 
   .contacts__address {

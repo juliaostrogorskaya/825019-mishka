@@ -144,6 +144,15 @@
   display: none;
 }
 
+.no-js .site-list__item {
+  display: block;
+
+  &--new,
+  &--sale {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     background-color: transparent;
@@ -254,6 +263,13 @@
   .main-nav__list {
     max-width: 1150px;
     width: 100%;
+  }
+
+  .no-js .site-list__item {
+    &--new,
+    &--sale {
+      display: block;
+    }
   }
 
   .site-list__item {

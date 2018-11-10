@@ -65,13 +65,13 @@
   @include font-set($font-size,16px,bold);
 }
 
-.chooze-size__radio:checked + label {
-  border: 2px solid $primary-color-form;
+.chooze-size__radio:hover + label,
+.chooze-size__radio:focus + label {
+  border: 2px solid rgba($secondary-color, 0.3);
 }
 
-.chooze-size__radio + label:hover,
-.chooze-size__radio + label:focus {
-  border: 2px solid rgba($secondary-color, 0.3);
+.chooze-size__radio:checked + label {
+  border: 2px solid $primary-color-form;
 }
 
 .chooze-size__button {
