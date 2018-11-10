@@ -8,8 +8,6 @@
 
     background-color: $primary-color;
 
-    &:hover,
-    &:focus,
     &:active {
       background-color: $primary-color-ligher;
       transform: translateY(-5px);
@@ -34,8 +32,6 @@
 
     background-color: $primary-color-dark;
 
-    &:hover,
-    &:focus,
     &:active {
       background-color: $primary-color-darker;
       transform: translateY(-5px);
@@ -153,6 +149,24 @@
   .category__list {
     max-width: 1150px;
     padding: 0 50px;
+  }
+
+  .category__item {
+    &--interior {
+      &:hover,
+      &:focus {
+        background-color: $primary-color-ligher;
+        transform: translateY(-5px);
+      }
+    }
+
+    &--toys {
+      &:hover,
+      &:focus {
+        background-color: $primary-color-darker;
+        transform: translateY(-5px);
+      }
+    }
   }
 
   .category__text {

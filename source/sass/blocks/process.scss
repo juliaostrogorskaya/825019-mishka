@@ -10,11 +10,6 @@
 
   border: $border;
 
-  &:hover,
-  &:focus {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  }
-
   &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
@@ -65,13 +60,6 @@
   border: none;
   outline: none;
   transform: translate(-50%, -50%);
-
-  &:hover,
-  &:focus {
-    transform: translate(-50%, -50%) scale(1.2);
-
-    transition: all 0.4s ease;
-  }
 
   &:active {
     transform: translate(-50%, -50%) scale(0.8);
@@ -166,6 +154,15 @@
     align-items: flex-end;
     margin-bottom: 105px;
     padding-bottom: 14px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 
   .process__header {
@@ -197,6 +194,18 @@
   .process__play-button {
     width: 101px;
     height: 77px;
+
+    &:hover,
+    &:focus {
+      transform: translate(-50%, -50%) scale(1.2);
+
+      transition: all 0.4s ease;
+    }
+
+    &:active {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.3;
+    }
   }
 
   .process__footer {

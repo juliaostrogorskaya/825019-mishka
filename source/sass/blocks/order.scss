@@ -8,6 +8,7 @@
   margin-bottom: 24px;
   padding-right: 30px;
   padding-left: 30px;
+  width: 320px;
 
   color: $secondary-color;
 
@@ -94,10 +95,6 @@
   @include font-set($font-size,18px,bold);
 }
 
-.radio-group__label:hover::before {
-  border: 2px solid $primary-color-form;
-}
-
 .radio-group__input:focus + label::before {
   border: 2px solid $primary-color-form;
 }
@@ -144,10 +141,6 @@
   @include after;
 }
 
-.checkbox-group__label:hover::before {
-  border: 2px solid $primary-color-form;
-}
-
 .checkbox-group__input:focus + label::before {
   border: 2px solid $primary-color-form;
 }
@@ -187,14 +180,11 @@
   border: none;
   border-bottom: 2px solid $black;
 
-  &:hover,
   &:focus,
   &:active {
     border-bottom: 2px solid $primary-color-form;
   }
 
-
-  &:hover + svg,
   &:focus + svg,
   &:active + svg {
     opacity: 1;
@@ -241,7 +231,6 @@
 
   border: 2px solid $black;
 
-  &:hover,
   &:focus,
   &:active {
     border: 2px solid $primary-color-form;
@@ -282,6 +271,7 @@
     padding-top: 72px;
     padding-right: 50px;
     padding-left: 50px;
+    width: 712px;
 
     @include font-set($font-size,$line-height);
   }
@@ -492,7 +482,7 @@
 
 @media (min-width: $desktop-width) {
   .order__text {
-    width: 75%;
+    width: 899px;
     margin: 0 auto;
     margin-bottom: 69px;
     padding-top: 116px;
@@ -523,6 +513,10 @@
     padding-bottom: 8px;
   }
 
+  .radio-group__label:hover::before {
+    border: 2px solid $primary-color-form;
+  }
+
   .radio-group__input + label::before {
     left: -1px;
   }
@@ -536,6 +530,10 @@
     width: 734px;
   }
 
+  .checkbox-group__label:hover::before {
+    border: 2px solid $primary-color-form;
+  }
+
   .checkbox-group__wrapper {
     width: 211px;
   }
@@ -543,6 +541,19 @@
   .field-group {
     margin-top: 0;
     padding-top: 0;
+  }
+
+  .field-group__input,
+  .field-group-contacts__input {
+    &:hover {
+      border-bottom: 2px solid $primary-color-form;
+    }
+
+    &:hover + svg {
+      opacity: 1;
+
+      fill: $primary-color-form;
+    }
   }
 
   .icon--phone {
@@ -562,5 +573,9 @@
   .field-group-text__textarea {
     width: 700px;
     padding-top: 12px;
+
+    &:hover {
+      border: 2px solid $primary-color-form;
+    }
   }
 }

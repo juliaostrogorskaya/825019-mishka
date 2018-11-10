@@ -5,11 +5,6 @@
 .page-footer__logo {
   display: none;
 
-  &:hover svg,
-  &:focus svg {
-    fill: $primary-color-darker;
-  }
-
   &:active svg {
     fill: rgba($primary-color-darker, 0.3);
   }
@@ -38,11 +33,6 @@
   }
 }
 
-.social__link:hover svg,
-.social__link:focus svg {
-  fill: $primary-color-darker;
-}
-
 .social__link:active svg {
   fill: rgba($primary-color-darker, 0.3);
 }
@@ -54,9 +44,8 @@
   padding-top: 10px;
   padding-bottom: 12px;
 
-  &:hover svg,
-  &:focus svg {
-    fill: $primary-color-darker;
+  svg {
+    fill: $primary-color;
   }
 
   &:active svg {
@@ -112,7 +101,32 @@
     padding: 0 50px;
   }
 
+  .page-footer__logo {
+    &:hover svg,
+    &:focus svg {
+      fill: $primary-color-darker;
+    }
+
+    &:active svg {
+      fill: rgba($primary-color-darker, 0.3);
+    }
+  }
+
+  .social__link:hover svg,
+  .social__link:focus svg {
+    fill: $primary-color-darker;
+  }
+
+  .social__link:active svg {
+    fill: rgba($primary-color-darker, 0.3);
+  }
+
   .page-footer__copyright {
     padding-top: 9px;
+
+    &:hover svg,
+    &:focus svg {
+      fill: $primary-color-darker;
+    }
   }
 }
