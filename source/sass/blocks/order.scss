@@ -62,6 +62,11 @@
   padding-bottom: 24px;
 }
 
+.field-group__input:-ms-input-placeholder,
+.field-group-contacts__input:-ms-input-placeholder {
+  color: rgba($secondary-color, 0.3);
+}
+
 .radio-group__input + label::before {
   top: -10px;
   left: 0;
@@ -406,11 +411,6 @@
 
   .field-group {
     padding: 0;
-  }
-
-  .field-group__input:-ms-input-placeholder,
-  .field-group-contacts__input:-ms-input-placeholder {
-    color: rgba($secondary-color, 0.3);
   }
 
   .field-group__wrapper {
