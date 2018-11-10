@@ -334,6 +334,7 @@
   .order-form__wrapper {
     display: flex;
     flex-wrap: wrap;
+    width: 768px;
   }
 
   .radio-group {
@@ -405,6 +406,11 @@
 
   .field-group {
     padding: 0;
+  }
+
+  .field-group__input:-ms-input-placeholder,
+  .field-group-contacts__input:-ms-input-placeholder {
+    color: rgba($secondary-color, 0.3);
   }
 
   .field-group__wrapper {
@@ -492,6 +498,7 @@
 
   .order-form__wrapper {
     padding: 0 100px;
+    width: 100%;
   }
 
   .order-form__group {
